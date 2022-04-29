@@ -1,4 +1,4 @@
-# ilojo-bar
+# Ilojo Bar
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
