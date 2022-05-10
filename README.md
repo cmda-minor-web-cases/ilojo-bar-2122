@@ -1,6 +1,6 @@
 # Ilojo Bar
 
-![Ilojo Bar](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar.png?raw=true)
+![Ilojo Bar](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar.jpg?raw=true)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
