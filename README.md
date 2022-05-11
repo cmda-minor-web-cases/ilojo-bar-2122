@@ -23,7 +23,7 @@ Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, w
 
 ### User stories
 **1 Verhalen over Ilojo Bar lezen, luisteren en bekijken**  
-Als inwoner van Lagos Island, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor het eiland.
+Als inwoner van Lagos, Nigeria of uit de Nigeriaanse diaspora, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor het eiland.
 
 **2 Verhalen over Ilojo toevoegen**  
 Als kunstenaar/bezoeker wil ik een verhaal over Ilojo Bar kunnen toevoegen aan de website, zodat ik de betekenis van het gebouw kan uitdragen.
