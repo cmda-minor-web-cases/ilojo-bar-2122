@@ -23,20 +23,19 @@ Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, w
 
 ### User stories
 **1 Verhalen over Ilojo Bar lezen, luisteren en bekijken**  
-Als inwoner van Lagos, Nigeria of uit de Nigeriaanse diaspora, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor het eiland.
+Als inwoner van Lagos, Nigeria of uit de Nigeriaanse diaspora, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor de miljoenenstad Lagos en van de kosmopolitsche geschiedenis ervan, die van Spanje tot Brazilië tot Nigeria leidt.
 
-**2 Verhalen over Ilojo toevoegen**  
-Als kunstenaar/bezoeker wil ik een verhaal over Ilojo Bar kunnen toevoegen aan de website, zodat ik de betekenis van het gebouw kan uitdragen.
+**2 Verhalen over Ilojo Bar toevoegen**  
+Als kunstenaar/bezoeker wil ik een verhaal over Ilojo Bar kunnen toevoegen aan de website, zodat ik de betekenis van het gebouw kan uitdragen en aanvullen.
  
 **3 Ilojo Bar beleven**   
-Als inwoner van Lagos Island, Nigeriaan, lid van de diaspora of geinteresseerde wereldburger wil ik een virtuele rondleiding door het gebouw kunnen volgen, zodat ik de sfeer van het gebouw kan ervaren.
-
+Als inwoner van Lagos Island, Nigeriaan, lid van de diaspora of geinteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
 
 ## Data
 Relevante data is via een API te ontsluiten en in een CMS te beheren.
 
 ## Planning
-In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen via Teams vragen gesteld worden.
+In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Het eerste gesprek met de opdrachtgever is gepland op **maandag 23 mei om 14 uur Nederlandse tijd via ZOOM.**  Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen via Teams vragen gesteld worden.
 
 ## Licentie
 
