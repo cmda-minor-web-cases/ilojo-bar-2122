@@ -11,7 +11,7 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-Ilojo Bar of Casa do Fernandez was een beeldbepalend nationaal monument op Lagos Island dat in 2016 illegaal werd gesloopt. Ilojo Bar werd ontworpen en gebouwd door Afrikanen die in de negentiende eeuw terugkeerden uit slavernij in Brazilië. Legacy wil graag een website die een soort virtueel monument wordt van dit bijzondere gebouw en de vele verhalen er rond omheen.
+Ilojo Bar of Casa do Fernandez was een beeldbepalend nationaal monument in Lagos, Nigeria, dat in 2016 illegaal werd gesloopt. Ilojo Bar werd ontworpen en gebouwd door Afrikanen die in de negentiende eeuw terugkeerden uit slavernij in Brazilië. Legacy wil graag een website die een soort virtueel monument wordt van dit bijzondere gebouw en de vele verhalen er omheen.
 
 ## Opdrachtgever
 Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Femke van Zeijl, hoofd onderzoek.
@@ -23,19 +23,19 @@ Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, w
 
 ### User stories
 **1 Verhalen over Ilojo Bar lezen, luisteren en bekijken**  
-Als inwoner van Lagos, Nigeria of uit de Nigeriaanse diaspora, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor de miljoenenstad Lagos en van de kosmopolitsche geschiedenis ervan, die van Spanje tot Brazilië tot Nigeria leidt.
+Als inwoner van Lagos, Nigeria, lid van de Nigeriaanse diaspora of geïnteresseerde wereldburger, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor de miljoenenstad Lagos en van de kosmopolitsche geschiedenis ervan, die van Spanje tot Brazilië tot Nigeria leidt.
 
 **2 Verhalen over Ilojo Bar toevoegen**  
 Als kunstenaar/bezoeker wil ik een verhaal over Ilojo Bar kunnen toevoegen aan de website, zodat ik de betekenis van het gebouw kan uitdragen en aanvullen.
  
 **3 Ilojo Bar beleven**   
-Als inwoner van Lagos Island, Nigeriaan, lid van de diaspora of geinteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
+Als inwoner van Lagos, Nigeria, lid van de diaspora of geïnteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
 
 ## Data
 Relevante data is via een API te ontsluiten en in een CMS te beheren.
 
 ## Planning
-In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Het eerste gesprek met de opdrachtgever is gepland op **maandag 23 mei om 14 uur Nederlandse tijd via ZOOM.**  Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen via Teams vragen gesteld worden.
+In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Het eerste gesprek met de opdrachtgever is gepland op **maandag 23 mei om 14 uur Nederlandse tijd via ZOOM.**  Contactgevens van Femke van Zeijl kunnen via Joost Faber worden opgevraagd. Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen vragen gesteld worden.
 
 ## Licentie
 
