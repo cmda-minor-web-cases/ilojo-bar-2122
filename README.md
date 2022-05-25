@@ -46,7 +46,7 @@ In de eerste week van de meesterproef is een briefing met de opdrachtgever en be
 
 ## Logs
 
-**Week 1
+**Week 1**  
 
 Deze week zijn Juul en ik begonnen aan ons gezamenlijke project voor de meesterproef. Samen zijn wij ingedeeld voor het project Ilojo Bar. Hier is het idee om een digitaal monument te gaan maken. Maandag hebben we contact gehad met Femke van Zeijl, zij is journaliste en al sinds 2012 actief in Lagos, Nigeria. Femke is samen met de stichting Legacy aan de gang gegaan om meer aandacht te schenken aan de Ilojo Bar. Deze bar heeft ontzettend veel verhalen en word ook gezien als een stukje geschiedenis van Lagos, maar ook van Nigeria. Aan ons de taak dus, om dit digitaal op te pakken. Wij hebben dinsdag via zoom met de andere teams gesproken met Femke. Hier werden wij gebriefd door haar en hebben wij ook een beter beeld gekregen over het project. De dag erna hebben wij een debriefing geschreven op basis van deze briefing. Op deze manier kunnen we voor ons zelf even op een rijtje zetten hoe wij het project zien. Femke had hier en daar nog wel wat kleine aan en opmerkingen, maar in grote lijnen was het voor iedereen duidelijk.
 
