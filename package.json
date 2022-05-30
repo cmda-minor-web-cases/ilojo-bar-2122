@@ -1,0 +1,29 @@
+{
+  "name": "ilojo-bar",
+  "version": "1.0.0",
+  "description": "Ilojo bar",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node-dev server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sophievanderburg/ilojo-bar.git"
+  },
+  "author": "Sophie & Gwen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sophievanderburg/ilojo-bar/issues"
+  },
+  "homepage": "https://github.com/Sophievanderburg/ilojo-bar#readme",
+  "dependencies": {
+    "@prismicio/client": "^6.5.0",
+    "@prismicio/helpers": "^2.3.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node-dev": "^7.4.3",
+    "node-fetch": "^2.6.7"
+  }
+}
