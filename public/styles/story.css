@@ -1,0 +1,35 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EFE8E0;
+}
+ header, footer{
+    height: 7.5vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100vw;
+    padding: 1em;
+}
+
+main h1{
+    margin: 0.5em 0 1em 0;
+}
+
+main p + p{
+    margin-top: 1em;
+}
+
+main > a{
+    color: black;
+    text-decoration: none;
+}

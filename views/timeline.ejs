@@ -1,13 +1,16 @@
 <%- include('partials/header.ejs') %>
 
-    <h1>timeline</h1>
-    <ol>
-        <% allStories.forEach( item => { %>
+    <ul>
+        <% allStories.forEach( (item, i) => { %>
             <li>
-               <a href="/story/<%- item.uid %>"><%- item.data.title[0].text %></a>
+               <a href="/story/<%- item.uid %>"> <%- i + 1 %>. 
+                    <%- item.data.title[0].text %>
+                    <p><%- item.data.text[0].text %></p>
+                    <img src="<%- item.data.images.url %>" alt="" width="100%">
+                </a>
             </li>
         <% }) %>
-    </ol>
+    </ul>
     
 
 <%- include('partials/foot.ejs') %>
