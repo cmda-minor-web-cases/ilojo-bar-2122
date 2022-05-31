@@ -1,0 +1,6 @@
+<%- include('partials/header.ejs') %>
+    
+    <h1><%- ctx.prismicH.asText(storyData.title) %></h1>
+    <%- ctx.prismicH.asHTML(storyData.text) %>
+
+<%- include('partials/foot.ejs') %>

@@ -29,9 +29,21 @@ app.use((req, res, next) => {
 
 
 app.get("/", async (req, res) =>{
-  const document = await client.getFirst()
-  console.log(document.data)
-  res.render('index', { document })
+  res.render('index')
+})
+
+app.get("/story", async (req, res) =>{
+  let allStories = await client.getAllByType('story')
+  console.log(allStories[0])
+  res.render('timeline', { allStories })
+})
+
+app.get('/story/:id', async (req, res) => {
+  let uid = req.params.id
+  let story = await client.getByUID('story', uid)
+  let storyData = story.data
+
+  res.render('story', { storyData })
 })
 
 

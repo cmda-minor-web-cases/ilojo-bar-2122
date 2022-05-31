@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') %>
+
+    <h1>timeline</h1>
+    <ol>
+        <% allStories.forEach( item => { %>
+            <li>
+               <a href="/story/<%- item.uid %>"><%- item.data.title[0].text %></a>
+            </li>
+        <% }) %>
+    </ol>
+    
+
+<%- include('partials/foot.ejs') %>
