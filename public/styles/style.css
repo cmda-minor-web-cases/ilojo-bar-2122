@@ -1,28 +1,9 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-}
-
-/* #EFE8E0 */
-
-body{
-    background-color: #EFE8E0;
-}
- header, footer{
-    height: 7.5vh;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url(general.css);
 
 main{
     width: 100vw;
     height: 92.5vh;
     overflow-x: scroll;
-    
 }
 
 main ul{
@@ -33,13 +14,8 @@ main ul{
     align-items: flex-start;
     border-bottom: 3px solid black;
     list-style-type: none;
-    margin: 0; padding: 3em;
+    margin: 3em; padding: 0;
     overflow-y: hidden;
-
-    background-image: url(/images/background.png);
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100%;
 }
 
 main ul li{

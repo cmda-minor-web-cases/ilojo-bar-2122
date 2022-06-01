@@ -1,0 +1,30 @@
+@import url(general.css);
+
+main{
+    width: 100%;
+    padding: 1em;
+}
+
+main p{
+    margin: 1em 0;
+}
+
+main input{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    margin: 0.5em 0;
+    background-color: transparent;
+}
+
+main textarea{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    margin: 0.5em 0;
+    background-color: transparent;
+}

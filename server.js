@@ -32,7 +32,6 @@ app.get("/", async (req, res) =>{
 
 app.get("/story", async (req, res) =>{
   let allStories = await client.getAllByType('story')
-  console.log(allStories[0])
   res.render('timeline', 
   { allStories, 
     css : "/styles/style.css" })
@@ -45,6 +44,11 @@ app.get('/story/:id', async (req, res) => {
 
   res.render('story', { storyData,
     css : "/styles/story.css"})
+})
+
+app.get("/send", async (req, res) =>{
+  res.render('sendStory',{
+    css : "/styles/sendStory.css"})
 })
 
 
