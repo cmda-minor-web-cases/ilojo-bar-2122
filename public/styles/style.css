@@ -30,7 +30,7 @@ main ul{
     align-items: flex-start;
     border-bottom: 3px solid black;
     list-style-type: none;
-    margin: 0 3em; padding: 0;
+    margin: 3em; padding: 0;
     overflow-y: hidden;
 }
 
@@ -74,6 +74,6 @@ main ul li a{
 
 main p{
     margin: 1em 0;
-    max-height: 40px;
-    text-overflow: ellipsis;
+    max-height: 4.5em;
+    overflow: hidden;
 }
