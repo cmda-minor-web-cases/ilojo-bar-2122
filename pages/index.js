@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="grid">
+      <section className="Hero">
+        <h1>Hello world</h1>
+      </section>
     </div>
   );
 }
