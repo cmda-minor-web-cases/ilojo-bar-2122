@@ -1,11 +1,18 @@
+:root {
+    --beige-color: #EFE8E0;
+    --brown-color: #544338;
+}
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
+    color: var(--brown-color);
 }
 
 body{
-    background-color: #EFE8E0;
+    background-color: var(--beige-color);
 }
+
  header, footer{
     height: 7.5vh;
 }
@@ -33,4 +40,5 @@ p, button, a, input, textarea{
     font-family: scotch-display, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 1.1em;
 }
