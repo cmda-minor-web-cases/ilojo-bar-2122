@@ -1,8 +1,7 @@
-import SectionHero from "./sections/sectionHero";
 export default function Main() {
   return (
     <main>
-      <SectionHero />
+      <p>main</p>
     </main>
   );
 }
