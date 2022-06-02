@@ -5,10 +5,11 @@
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
   * [Opdrachtgever](#opdrachtgever)
-  * [Design challenge](#design-challege)
+  * [Design challenge](#Design-challenge)
   * [Data](#data)
   * [Planning](#planning)
   * [Licentie](#licentie)
+  * [Debriefing](#debriefing)
   * [Logs](#logs)
 
 ## Beschrijving
@@ -42,6 +43,8 @@ Relevante data is via een API te ontsluiten en in een CMS te beheren.
 In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Het eerste gesprek met de opdrachtgever is gepland op **maandag 23 mei om 14 uur Nederlandse tijd via ZOOM.**  Contactgevens van Femke van Zeijl kunnen via Joost Faber worden opgevraagd. Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen vragen gesteld worden.
 
 ![Ilojo Bar in 1946](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar-2015.jpg?raw=true)
+
+## Debriefing
 
 
 ## Logs
