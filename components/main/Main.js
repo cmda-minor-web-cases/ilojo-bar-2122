@@ -14,15 +14,15 @@ export default function Main() {
   return (
     <main>
       <Introduction />
-      <IllegalDemolition />
-      <StoryOfAngel />
-      <BotchedDreams />
-      <DarkPast />
-      <FamilyHouse />
-      <MacaulayConnection />
-      <AbeoKutaVisits />
-      <Returnees />
       <SpanishMigrant />
+      <Returnees />
+      <AbeoKutaVisits />
+      <MacaulayConnection />
+      <FamilyHouse />
+      <DarkPast />
+      <BotchedDreams />
+      <StoryOfAngel />
+      <IllegalDemolition />
     </main>
   );
 }
