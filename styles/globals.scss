@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff), url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
+}
+
+@font-face {
+  font-family: Helvetica-Bold-Italic;
+  src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff), url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
+}
+
+@font-face {
+  font-family: Helvetica-Regular;
+  src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff), url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
+}
+
+@font-face {
+  font-family: Roxborough;
+  src: url(../public/fonts/RoxboroughCF-Light.woff), url(../public/fonts/RoxboroughCF-Light.woff2);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,8 +26,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 body {
@@ -21,12 +39,68 @@ a {
 
 h1, h2 {
   font-size: clamp(2.2rem, 3vw, 6rem);
+  font-family: Helvetica-Bold-Italic;
+  text-transform: uppercase;
+  color: #333333;
+
+  span {
+    font-family: Roxborough;
+  }
 }
 
 h4 {
   font-size: clamp(1.2rem, 2vw, 4rem);
+  font-family: Helvetica-Bold;
+  color: #333333;
 }
 
 p {
   font-size: clamp(0.8rem, 1vw, 2rem);
+  font-family: Helvetica-Regular;
+  color: #333333;
+}
+
+header {
+  background-color: #FFFEFB;
+}
+
+main section:first-of-type, main section:nth-of-type(2) {
+  background-color: #F2F0EC;
+}
+
+main section:nth-of-type(3) {
+  background-color: #FFFBF2;
+}
+
+main section:nth-of-type(4) {
+  background-color: #E2DCCF;
+}
+
+main section:nth-of-type(5) {
+  background-color: #4F4D4A;
+}
+
+main section:nth-of-type(6) {
+  background-color: #EFE0C9;
+}
+
+main section:nth-of-type(7) {
+  background-color: #E0D3CE;
+}
+
+main section:nth-of-type(8) {
+  background-color: #FFFFFF;
+}
+
+main section:nth-of-type(9) {
+  background-color: #CCB797;
+}
+
+main section:nth-of-type(10) {
+  background-color: #FFFDFA;
+}
+
+footer {
+  // Footer heeft twee achtergrond kleuren. Moeten nog ff kijken hoe we dat doen. #898266
+  background-color: #342E20;
 }

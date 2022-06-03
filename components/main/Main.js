@@ -16,7 +16,7 @@ export default function Main() {
       <Introduction />
       <IllegalDemolition />
       <StoryOfAngel />
-      <BotchedDreams />
+      <BotchedDreams /> 
       <DarkPast />
       <FamilyHouse />
       <MacaulayConnection />
