@@ -19,6 +19,9 @@ For a more detailed explanation [click here](https://github.com/Sophievanderburg
 ## The problem
 On September 11th 2016, bulldozers came and demolished the iconic national monument. The Ilojo bar or also called, Casa do Fernandez, Was designed and built by Africans who returned from slavery in Brazil in the 1800s. It was a national monument and should have been protected. Because the Ilojo bar has a lot of stories to tell and was a beautiful monument, legacy would like to create a virtual monument. To honor it and to let the stories life on, even though the building is gone. 
 
+<img width="300" alt="Screenshot 2022-06-07 at 13 35 05" src="https://user-images.githubusercontent.com/70900763/172369850-22e12c6d-dafc-4af5-ad43-7c841f01e3a4.png"> <img width="300" alt="Screenshot 2022-06-07 at 13 35 40" src="https://user-images.githubusercontent.com/70900763/172369968-40f08f1f-da88-45ad-bc4e-7df617c746a2.png">
+
+
 ## Prototype
 ## API
 
