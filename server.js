@@ -1,8 +1,6 @@
 import express from 'express'
-import fetch from 'node-fetch'
 
 import * as prismicH from '@prismicio/helpers'
-import { client } from './config/prismicConfig.js'
 
 import { router } from './router/router.js';
 
@@ -22,8 +20,6 @@ app.use((req, res, next) => {
 })
 app.use(express.static('public'))
 app.use(router)
-
-
 
 
 

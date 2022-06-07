@@ -1,0 +1,64 @@
+@import url(general.css);
+
+main{
+    width: 100vw;
+    height: 92.5vh;
+    overflow-x: scroll;
+}
+
+main ul{
+    width: auto;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    border-bottom: 3px solid  var(--brown-color);
+    list-style-type: none;
+    margin: 2em; padding: 0;
+    overflow-y: hidden;
+}
+
+main ul li{
+    display: inline-block;
+    width: 70vw;
+    margin: 0 2.5em 2em 0;
+    border: 1px solid  var(--brown-color);
+    border-radius: 1em;
+    padding: 2em;
+    position: relative;
+    background-color: var(--beige-color);
+}
+
+main ul li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 10px);
+    background-color: var(--brown-color);
+}
+
+main ul li::after{
+    content: '';
+    width: 2px;
+    height: 200%;
+    position: absolute;
+    bottom: -200%;
+    left: calc(50% - 1px);
+    border-left: dashed 1px var(--brown-color) ;
+}
+
+main ul li a{
+    width: 100%;
+    height: 100%;
+    color: var(--brown-color);
+    text-decoration: none;
+}
+
+main p{
+    margin: 1em 0;
+    max-height: 4.5em;
+    overflow: hidden;
+}
