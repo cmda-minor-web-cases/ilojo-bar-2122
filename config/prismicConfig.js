@@ -14,7 +14,7 @@ const accessToken = '' // If your repository is private, add an access token.
 const routes = [
   {
     type: 'story',
-    path: '/story/:uid',
+    path: '/timeline/:uid',
   },
 ]
 
