@@ -14,6 +14,7 @@ The target audience is quite extensive. Legacy wants everyone to be able to view
 
 The people there, mainly reach the internet on their smartphones. It's not always that good though. So that is something we have to consider.
 
+For a more detailed explanation [click here](https://github.com/Sophievanderburg/ilojo-bar/wiki/Debrief)
 ## The problem
 ## Prototype
 ## API
