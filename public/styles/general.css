@@ -3,6 +3,20 @@
     --brown-color: #544338;
 }
 
+
+h1, h2, h3{
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, button, a, input, textarea, ::before, ::after{
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -11,6 +25,7 @@
 
 body{
     background-color: var(--beige-color);
+    overflow: hidden;
 }
 
  header, footer{
@@ -24,21 +39,68 @@ header{
     position: relative;
 }
 
+header h1 a{
+    text-decoration: none;
+}
+
 header nav{
     position: absolute;
     top: 0;
-    left: 0;
+    right: -70vw;
+
+    opacity: 0;
+    transform: translateX(0);
+    transition: 0.5s;
+
+    height: 100vh;
+    width: 70vw;
+    padding: 5vh 1em;
+    background-color: var(--beige-color);
+    z-index: 10;
 }
 
-h1, h2, h3{
-    font-family: scotch-display, sans-serif;
-    font-weight: 900;
-    font-style: normal;
+header nav h2{
+    margin-bottom: 0.75em;
 }
 
-p, button, a, input, textarea{
-    font-family: scotch-display, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.1em;
+header nav ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
 }
+
+header nav ul li{
+    padding: 1em;
+    text-decoration: none;    width: 100%;
+    border-bottom: 1px solid var(--brown-color);
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header > label{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+header nav label{
+    background-color: transparent;
+    border: none;
+    position:absolute;
+    margin: 1em;
+    right: 0;
+    top: 0;
+}
+
+header > input[type='checkbox']{
+    display: none;
+}
+
+header > input[type='checkbox']:checked ~ nav{
+    opacity: 1;
+    transform: translateX(-100%);
+    box-shadow: 0px 0px 5px var(--brown-color);
+}
+
