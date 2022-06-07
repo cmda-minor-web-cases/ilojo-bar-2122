@@ -25,10 +25,9 @@ p, button, a, input, textarea, ::before, ::after{
 
 body{
     background-color: var(--beige-color);
-    overflow: hidden;
 }
 
- header, footer{
+header, footer{
     height: 7.5vh;
 }
 
@@ -37,6 +36,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 header h1 a{
@@ -48,7 +48,6 @@ header nav{
     top: 0;
     right: -70vw;
 
-    opacity: 0;
     transform: translateX(0);
     transition: 0.5s;
 
@@ -56,7 +55,7 @@ header nav{
     width: 70vw;
     padding: 5vh 1em;
     background-color: var(--beige-color);
-    z-index: 10;
+    z-index: 20;
 }
 
 header nav h2{
@@ -71,7 +70,8 @@ header nav ul{
 
 header nav ul li{
     padding: 1em;
-    text-decoration: none;    width: 100%;
+    text-decoration: none;   
+    width: 100%;
     border-bottom: 1px solid var(--brown-color);
 }
 
@@ -99,8 +99,6 @@ header > input[type='checkbox']{
 }
 
 header > input[type='checkbox']:checked ~ nav{
-    opacity: 1;
     transform: translateX(-100%);
     box-shadow: 0px 0px 5px var(--brown-color);
 }
-
