@@ -15,7 +15,10 @@ The target audience is quite extensive. Legacy wants everyone to be able to view
 The people there, mainly reach the internet on their smartphones. It's not always that good though. So that is something we have to consider.
 
 For a more detailed explanation [click here](https://github.com/Sophievanderburg/ilojo-bar/wiki/Debrief)
+
 ## The problem
+On September 11th 2016, bulldozers came and demolished the iconic national monument. The Ilojo bar or also called, Casa do Fernandez, Was designed and built by Africans who returned from slavery in Brazil in the 1800s. It was a national monument and should have been protected. Because the Ilojo bar has a lot of stories to tell and was a beautiful monument, legacy would like to create a virtual monument. To honor it and to let the stories life on, even though the building is gone. 
+
 ## Prototype
 ## API
 
