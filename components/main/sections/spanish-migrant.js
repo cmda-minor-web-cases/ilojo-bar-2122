@@ -1,8 +1,16 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link'
 
+// Styles
+import styles from '../../../styles/main/sections/spanish-migrant.module.scss'
+
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import shipsInSea from '../../../public/images/story-01/story01-photo-01.png'
+import receipt01 from '../../../public/images/story-01/story01-photo-04.png'
+import receipt02 from '../../../public/images/story-01/story01-photo-03.png'
+import receipt03 from '../../../public/images/story-01/story01-photo-02.png'
+import imigrants from '../../../public/images/story-01/story01-photo-05.png'
 
 export default function SpanishMigrant() {
   return (
@@ -17,42 +25,30 @@ export default function SpanishMigrant() {
         </p>
         <h2>A spanish migrant <span>looking for</span>greener pastures</h2>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={shipsInSea}
+            alt="Spanish ships in bay"
+            layout="responsive"
         />
         <ul>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={receipt01}
+                    alt="Receipt 1"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={receipt02}
+                    alt="Receipt 2"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
-                />
-            </li>
-            <li> 
-                <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={receipt03}
+                    alt="Receipt 3"
+                    layout="responsive"
                 />
             </li>
         </ul>
@@ -64,10 +60,9 @@ export default function SpanishMigrant() {
             remaining essentially unchanged. It was popularised in the 1960s with.
         </p>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={imigrants}
+            alt="Portugese imigrants"
+            layout="responsive"
         />
         <Link href="/about">
             <a>  
@@ -76,7 +71,14 @@ export default function SpanishMigrant() {
             </svg>
             </a>
         </Link>
-        {/*Paper rip for end of section*/}
+        <div className="paper-rip">
+        <div className={styles.papergradient}></div>
+        <Image
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+        />
+      </div>
     </section>
   );
 }

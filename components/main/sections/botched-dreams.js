@@ -1,25 +1,29 @@
 import Image from 'next/image';
 import Link from 'next/link'
 
+// Styles
+import styles from '../../../styles/main/sections/botched-dreams.module.scss'
+
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import dirtyIlojo from '../../../public/images/story-07/story07-photo-01.png'
+import cleanIlojo from '../../../public/images/story-07/story07-photo-02.png'
+import statue from '../../../public/images/story-07/story07-photo-03.png'
 
 export default function BotchedDreams() {
   return (
     <section>
         <Image
-            src={dummy}
+            src={dirtyIlojo}
             alt="Picture of the author"
-            width="350px"
-            height="300px"
+            layout="responsive"
         />
         <h4>1950&apos;s</h4>
         <h2>Botched<span>dreams for</span> Ilojo bar</h2>
         <Image
-            src={dummy}
+            src={cleanIlojo}
             alt="Picture of the author"
-            width="350px"
-            height="300px"
+            layout="responsive"
         />
         <p> 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -29,10 +33,9 @@ export default function BotchedDreams() {
             It was popularised in the 1960s with.
         </p>
         <Image
-            src={dummy}
+            src={statue}
             alt="Picture of the author"
-            width="350px"
-            height="300px"
+            layout="responsive"
         />
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -41,6 +44,15 @@ export default function BotchedDreams() {
             It has survived not only five centuries, but also the leap into electronic typesetting, 
             remaining essentially unchanged. It was popularised in the 1960s with.
         </p>
+        <div className="paper-rip">
+        <div className={styles.papergradient}></div>
+        <Image
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+        />
+      </div>
     </section>
+    
   );
 }

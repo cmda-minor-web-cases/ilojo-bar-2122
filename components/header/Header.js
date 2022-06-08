@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+// Styles
+import styles from '../../styles/header/Header.module.scss'
+
 // Images
-import Dummy from "../../assets/ilojo-bar-1946.jpg";
-import Paper from "../../assets/ilojo-bar.jpg";
+import Paper from "../../public/images/paper-effects/paper-rip.svg";
 import architectTop from "../../public/images/home/home-photo-01.png"
 import architectSide from "../../public/images/home/home-photo-02.png"
 import oldBuilding from "../../public/images/home/home-photo-03.png"
@@ -11,7 +13,7 @@ import newBuilding from "../../public/images/home/home-photo-04.png"
 
 export default function Header() {
   return (
-    <header>
+    <header className={styles.header}>
       {/*Top images*/}
       <div>
         <Image
@@ -42,9 +44,10 @@ export default function Header() {
         />
       </div>
       {/*Paper rip*/}
-      <div>
+      <div className="paper-rip">
+        <div className={styles.papergradient}></div>
         <Image
-          alt="The guitarist in the concert."
+          alt="Paper rip"
           src={Paper}
           layout="responsive"
         />

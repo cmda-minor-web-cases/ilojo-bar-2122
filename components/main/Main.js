@@ -1,3 +1,6 @@
+// Styles
+import styles from '../../styles/main/Main.module.scss'
+
 // sections
 import Introduction from "./sections/introduction";
 import IllegalDemolition from "./sections/illegal-demolition";

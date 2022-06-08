@@ -1,13 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Styles
+import styles from '../../../styles/main/sections/macaulay-connection.module.scss'
+
 // Images
-import Dummy from "../../../assets/ilojo-bar-1946.jpg";
-import Paper from "../../../assets/ilojo-bar.jpg";
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import macaulay from "../../../public/images/story-04/story04-photo-01.png"
+import table from "../../../public/images/story-04/story04-photo-02.png"
+import brothers from "../../../public/images/story-04/story04-photo-03.png"
 
 export default function MacaulayConnection() {
   return (
     <section>
+    <Image
+        alt="Photo of Macaulay"
+        src={macaulay}
+        layout="responsive"
+      />
       <h4>1907 - 1913</h4>
       <h2>
         The <span>Macaulay</span> Connection
@@ -20,14 +30,14 @@ export default function MacaulayConnection() {
       </p>
       {/*Photo*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Brothers"
+        src={brothers}
         layout="responsive"
       />
       {/*3d table*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="3d render of table"
+        src={table}
         layout="responsive"
       />
       <p>
@@ -52,11 +62,14 @@ export default function MacaulayConnection() {
         </a>
       </Link>
       {/*Paper rip*/}
-      <Image
-        alt="The guitarist in the concert."
-        src={Paper}
-        layout="responsive"
-      />
+      <div className="paper-rip">
+        <div className={styles.papergradient}></div>
+        <Image
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+        />
+      </div>
     </section>
   );
 }

@@ -1,8 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link'
 
+// Styles
+import styles from '../../../styles/main/sections/family-house.module.scss'
+
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import olaiya from '../../../public/images/story-05/story05-photo-01.png'
+import receipt from '../../../public/images/story-05/story05-photo-02.png'
+import cover1 from '../../../public/images/story-05/story05-photo-03.png'
+import cover2 from '../../../public/images/story-05/story05-photo-04.png'
+import tinubuSquare from '../../../public/images/story-05/story05-photo-05.png'
+import cover3 from '../../../public/images/story-05/story05-photo-06.png'
+
 
 export default function FamilyHouse() {
   return (
@@ -10,10 +19,9 @@ export default function FamilyHouse() {
         <h4>1950&apos;s</h4>
         <h2>A family house for <span>the Olayias</span></h2>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={olaiya}
+            alt="Mister Olaiya"
+            layout="responsive"
         />
         <p> 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -25,34 +33,37 @@ export default function FamilyHouse() {
         <ul>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={receipt}
+                    alt="Receipt"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={cover1}
+                    alt="Music cover"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={cover2}
+                    alt="Music cover"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={tinubuSquare}
+                    alt="Tinubu square"
+                    layout="responsive"
+                />
+            </li>
+            <li> 
+                <Image
+                    src={cover3}
+                    alt="Music cover"
+                    layout="responsive"
                 />
             </li>
         </ul>
@@ -75,13 +86,6 @@ export default function FamilyHouse() {
             </svg>
             </a>
         </Link>
-        {/*Paper rip for end of section*/}
-        <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
-        />
     </section>
   );
 }

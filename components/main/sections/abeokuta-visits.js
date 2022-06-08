@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Styles
+import styles from '../../../styles/main/sections/abeokuta-visits.module.scss'
+
 // Images
-import Dummy from "../../../assets/ilojo-bar-1946.jpg";
-import Paper from "../../../assets/ilojo-bar.jpg";
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import abeokuta from "../../../public/images/story-03/story03-photo-01.png"
+import royals from "../../../public/images/story-03/story03-photo-02.png"
 
 export default function AbeoKutaVisits() {
   return (
@@ -15,8 +19,8 @@ export default function AbeoKutaVisits() {
       <div>
         {/*Photo*/}
         <Image
-          alt="The guitarist in the concert."
-          src={Dummy}
+          alt="Abeokuta"
+          src={abeokuta}
           layout="responsive"
         />
         <p>
@@ -29,8 +33,8 @@ export default function AbeoKutaVisits() {
 
       {/*Photo*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Royal family"
+        src={royals}
         layout="responsive"
       />
       <p>

@@ -1,19 +1,37 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link'
 
+// Styles
+import styles from '../../../styles/main/sections/story-of-angel.module.scss'
+
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import constructionWorker from '../../../public/images/story-08/story08-photo-01.png'
+import brokenAngel from '../../../public/images/story-08/story08-photo-02.png'
+import sideViewAngel from '../../../public/images/story-08/story08-photo-03.png'
+import angelOnBuilding from '../../../public/images/story-08/story08-photo-04.png'
+
+
 
 export default function StoryOfAngel() {
   return (
     <section>
+        <Image
+            src={constructionWorker}
+            alt="Construction worker deconstructing angel statue"
+            layout="responsive"
+        />
+        <Image
+            src={brokenAngel}
+            alt="Angel statue broken down"
+            layout="responsive"
+        />
         <h4>2016</h4>
         <h2><span>The story of</span> the angel</h2>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={sideViewAngel}
+            alt="Side view of head angel"
+            layout="responsive"
         />
         <p> 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -23,10 +41,9 @@ export default function StoryOfAngel() {
             It was popularised in the 1960s with.
         </p>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={angelOnBuilding}
+            alt="Angel on the Ilojo bar"
+            layout="responsive"
         />
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -43,12 +60,14 @@ export default function StoryOfAngel() {
             </a>
         </Link>
         {/*Paper rip for end of section*/}
+        <div className="paper-rip">
+        <div className={styles.papergradient}></div>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
         />
+      </div>
     </section>
   );
 }

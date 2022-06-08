@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Styles
+import styles from '../../styles/footer/Footer.module.scss'
+
 // Images
 import Dummy from "../../assets/ilojo-bar-1946.jpg";
 import Paper from "../../assets/ilojo-bar.jpg";

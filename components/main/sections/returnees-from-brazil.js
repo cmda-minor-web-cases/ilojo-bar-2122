@@ -1,52 +1,55 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link'
 
+// Styles
+import styles from '../../../styles/main/sections/returnees-from-brazil.module.scss'
+
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import family from '../../../public/images/story-02/story02-photo-01.png'
+import building from '../../../public/images/story-02/story02-photo-02.png'
+import newBuilding from '../../../public/images/story-02/story02-photo-03.png'
+import oldMap from '../../../public/images/story-02/story02-photo-04.png'
+import building2 from '../../../public/images/story-02/story02-photo-05.png'
 
 export default function Returnees() {
   return (
     <section>
         {/*Paper rip for end of section*/}
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+            src={family}
+            alt="Brazilian family"
+            layout="responsive"
         />
         <h4>19th century</h4>
         <h2>The returnees <span>from Brazil who</span> changed Lagos</h2>
         <ul>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={building}
+                    alt="Picture of building"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={oldMap}
+                    alt="Old map of Lagos"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={newBuilding}
+                    alt="New picture of building"
+                    layout="responsive"
                 />
             </li>
             <li> 
                 <Image
-                    src={dummy}
-                    alt="Picture of the author"
-                    width="350px"
-                    height="300px"
+                    src={building2}
+                    alt="Picture of building"
+                    layout="responsive"
                 />
             </li>
         </ul>
@@ -65,12 +68,14 @@ export default function Returnees() {
             </a>
         </Link>
         {/*Paper rip for end of section*/}
+        <div className="paper-rip">
+        <div className={styles.papergradient}></div>
         <Image
-            src={dummy}
-            alt="Picture of the author"
-            width="350px"
-            height="300px"
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
         />
+      </div>
     </section>
   );
 }
