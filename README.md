@@ -1,6 +1,6 @@
 # Ilojo Bar Virtual Monument
 
-![Ilojo Bar](assets/ilojobar-sign.png)
+![Ilojo Bar](assets/ilojobar-sign.png) 
 
 ## Table of contents
   * [Description](#description)
