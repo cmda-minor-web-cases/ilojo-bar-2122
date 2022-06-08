@@ -1,6 +1,6 @@
 # Ilojo Bar Virtual Monument
 
-![Ilojo Bar](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar.jpg?raw=true)
+![Ilojo Bar](assets/ilojobar-sign.png)
 
 ## Table of contents
   * [Description](#description)
@@ -11,16 +11,12 @@
 ## Description
 Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria, which was illegally demolished in 2016. Because it got demolished Lagos lost a special building. This web app gives the people of Lagos the opportunity to virtually "visit" the monument and read its stories. 
 
-![Ilojo Bar in 1946](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar-1946.jpg?raw=true)
-
 ## The client
 Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Femke van Zeijl, hoofd onderzoek.
 
 ## Design challenge
 Design and develop an interactive virtual monument for Ilojo Bar.
 Attractive and functional for residents of a country with low bandwidth, where many only use the internet via their mobile phone, while it is also beautiful for desktop.
-
-![Ilojo Bar in 1946](https://github.com/cmda-minor-web-cases/ilojo-bar/blob/main/assets/ilojo-bar-2015.jpg?raw=true)
 
 ## Licentie
 
