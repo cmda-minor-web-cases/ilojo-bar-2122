@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --beige: #c0bb87;
+  --brown: #433222;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("css/BalooBhai-Regular.ttf");
+  font-display: swap;
+}
+
+body {
+  background-color: var(--beige);
+  overflow-x: hidden;
+}
+
+.three-module {
+  margin-top: -10rem;
+  display: none;
+}
+
+/* Home Page */
+
+.ilojo {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  /* justify-content: center; */
+}
+
+h2 {
+  font-family: "Baloo", sans-serif;
+  font-weight: 100;
+  color: var(--brown);
+  text-align: center;
+}
+
+
+/* Toggle switch */
+
+.switch {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--beige);
+  box-shadow: inset 2px 2px 10px var(--brown);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:focus {
+  box-shadow: inset 2px 2px 10px var(--brown);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--brown);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--brown);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Bar Page */
+
+.bar-page main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Baloo", sans-serif;
+  color: var(--brown);
+  text-align: center;
+  font-size: 80px;
+  z-index: 999 !important;
+}
+
+.back img {
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+p {
+  font-family: "Baloo", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #211810;
+}
+
+.bar-area {
+  position: relative;
+}
+
+.bar,
+.lamps,
+.bubble,
+.stools,
+.man {
+  position: absolute;
+  place-content: center;
+}
+
+.lamps {
+  top: 0;
+  left: 28vw;
+
+  margin-bottom: 100px;
+  /* width: 50vw; */
+}
+
+.bubble {
+  top: 25vh;
+  left: 40vw;
+}
+.man {
+  top: 30vh;
+  left: 42vw;
+  cursor: pointer;
+}
+
+.bar {
+  top: 42vh;
+  left: 28vw;
+  /* width: 43vw; */
+}
+.stools {
+  top: 55vh;
+  left: 31vw;
+
+  /* width: 35vw; */
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 12px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .lamps {
+    width: 95vw;
+    left: 5vw;
+    top: 10vh;
+  }
+
+  .bubble {
+    width: 13vw;
+    left: 32vw;
+    top: 19vh;
+  }
+
+  .man {
+    width: 30vw;
+    left: 34vw;
+    top: 22vh;
+  }
+  .bar {
+    width: 95vw;
+    left: 4vw;
+    top: 30vh;
+  }
+
+  .stools {
+    width: 75vw;
+    left: 13vw;
+    top: 37vh;
+  }
+}
