@@ -35,7 +35,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
@@ -55,7 +54,11 @@ header nav{
     width: 70vw;
     padding: 5vh 1em;
     background-color: var(--beige-color);
-    z-index: 20;
+    z-index: 100;
+}
+
+main{
+    z-index: -1;
 }
 
 header nav h2{
