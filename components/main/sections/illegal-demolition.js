@@ -1,8 +1,14 @@
 import Image from "next/image";
 
+// Styles
+import styles from '../../../styles/main/sections/illegal-demolition.module.scss'
+
 // Images
-import Dummy from "../../../assets/ilojo-bar-1946.jpg";
-import Paper from "../../../assets/ilojo-bar.jpg";
+import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import ilojoBalcon from '../../../public/images/story-09/story09-photo-01.png'
+import wreckingBall from '../../../public/images/story-09/story09-photo-02.png'
+import excavator from '../../../public/images/story-09/story09-photo-04.png'
+
 
 export default function IllegalDemolition() {
   return (
@@ -19,14 +25,13 @@ export default function IllegalDemolition() {
       {/*Ripped Photo*/}
 
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Balconies of Ilojo bar"
+        src={ilojoBalcon}
         layout="responsive"
       />
-      {/*Wrecking ball*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Wrecking ball"
+        src={wreckingBall}
         layout="responsive"
       />
       <p>
@@ -35,12 +40,23 @@ export default function IllegalDemolition() {
         molestias sit eum ab id! Doloremque, vero quam voluptatem repellendus
         dolore reiciendis.
       </p>
-      {/*Paper rip*/}
+      {/* 
+        Video of demolition
+      */}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Excavator"
+        src={excavator}
         layout="responsive"
       />
+      {/*Paper rip*/}
+      <div className="paper-rip">
+        <div className={styles.papergradient}></div>
+        <Image
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+        />
+      </div>
     </section>
   );
 }

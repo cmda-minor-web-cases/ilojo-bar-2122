@@ -1,7 +1,10 @@
 import Image from 'next/image';
 
 // import Images
-import dummy from '../../../assets/ilojo-bar.jpg'
+import introIlojo from '../../../public/images/intro/intro-photo-01.png'
+
+// Styles
+import styles from '../../../styles/main/sections/introduction.module.scss'
 
 export default function Introduction() {
   return (
@@ -16,12 +19,6 @@ export default function Introduction() {
         Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
         publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
-      <Image
-        src={dummy}
-        alt="Picture of the author"
-        width="350px"
-        height="300px"
-      />
     </section>
   );
 }

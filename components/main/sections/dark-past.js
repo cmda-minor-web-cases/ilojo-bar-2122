@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Styles
+import styles from '../../../styles/main/sections/dark-past.module.scss'
+
 // Images
 import Dummy from "../../../assets/ilojo-bar-1946.jpg";
 import Paper from "../../../assets/ilojo-bar.jpg";
+import paintedShip from "../../../public/images/story-06/story06-photo-01.png"
+import oldWomen from "../../../public/images/story-06/story06-photo-02.png"
 
 export default function DarkPast() {
   return (
@@ -20,8 +25,8 @@ export default function DarkPast() {
       </h2>
       {/*Photo*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Picture of old women"
+        src={oldWomen}
         layout="responsive"
       />
       <p>
@@ -31,8 +36,8 @@ export default function DarkPast() {
       </p>
       {/*Photo*/}
       <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
+        alt="Painting enslaved on ship"
+        src={paintedShip}
         layout="responsive"
       />
       <p>
