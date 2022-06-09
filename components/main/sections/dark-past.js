@@ -5,20 +5,21 @@ import Link from "next/link";
 import styles from '../../../styles/main/sections/dark-past.module.scss'
 
 // Images
-import Dummy from "../../../assets/ilojo-bar-1946.jpg";
-import Paper from "../../../assets/ilojo-bar.jpg";
+import Paper from "../../../public/images/paper-effects/paper-dark.svg";
 import paintedShip from "../../../public/images/story-06/story06-photo-01.png"
 import oldWomen from "../../../public/images/story-06/story06-photo-02.png"
 
 export default function DarkPast() {
   return (
-    <section>
+    <section className={styles.dark}>
       {/*Burnt Paper rip*/}
-      <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
-        layout="responsive"
-      />
+      <div className="paper-rip">
+            <Image
+            alt="Paper rip"
+            src={Paper}
+            layout="responsive"
+            />
+      </div>
       <h4>19th century</h4>
       <h2>
         A Dark <span>Past</span>
@@ -63,11 +64,13 @@ export default function DarkPast() {
         </a>
       </Link>
       {/*Burnt Paper rip*/}
-      <Image
-        alt="The guitarist in the concert."
-        src={Paper}
-        layout="responsive"
-      />
+      <div className="paper-rip">
+          <Image
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+          />
+      </div>
     </section>
   );
 }

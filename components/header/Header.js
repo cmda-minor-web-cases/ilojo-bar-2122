@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from '../../styles/header/Header.module.scss'
 
 // Images
-import Paper from "../../public/images/paper-effects/paper-rip.svg";
+import Paper from "../../public/images/paper-effects/paper-header.svg";
 import architectTop from "../../public/images/home/home-photo-01.png"
 import architectSide from "../../public/images/home/home-photo-02.png"
 import oldBuilding from "../../public/images/home/home-photo-03.png"

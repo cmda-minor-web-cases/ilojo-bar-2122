@@ -5,7 +5,8 @@ import Link from 'next/link'
 import styles from '../../../styles/main/sections/returnees-from-brazil.module.scss'
 
 // import Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import Papertop from "../../../public/images/paper-effects/paper-returnees-top.svg"
+import Paperbottom from "../../../public/images/paper-effects/paper-returnees-bottom.svg"
 import family from '../../../public/images/story-02/story02-photo-01.png'
 import building from '../../../public/images/story-02/story02-photo-02.png'
 import newBuilding from '../../../public/images/story-02/story02-photo-03.png'
@@ -14,7 +15,14 @@ import building2 from '../../../public/images/story-02/story02-photo-05.png'
 
 export default function Returnees() {
   return (
-    <section>
+    <section className={styles.returnees}>
+        <div className="paper-rip">
+            <Image
+            alt="Paper rip"
+            src={Papertop}
+            layout="responsive"
+            />
+        </div>
         {/*Paper rip for end of section*/}
         <Image
             src={family}
@@ -69,13 +77,12 @@ export default function Returnees() {
         </Link>
         {/*Paper rip for end of section*/}
         <div className="paper-rip">
-        <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
-      </div>
+            <Image  
+            alt="Paper rip"
+            src={Paperbottom}
+            layout="responsive"
+            />
+        </div>
     </section>
   );
 }

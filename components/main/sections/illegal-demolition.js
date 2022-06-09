@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from '../../../styles/main/sections/illegal-demolition.module.scss'
 
 // Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
 import ilojoBalcon from '../../../public/images/story-09/story09-photo-01.png'
 import wreckingBall from '../../../public/images/story-09/story09-photo-02.png'
 import excavator from '../../../public/images/story-09/story09-photo-04.png'
@@ -12,7 +11,7 @@ import excavator from '../../../public/images/story-09/story09-photo-04.png'
 
 export default function IllegalDemolition() {
   return (
-    <section>
+    <section className={styles.demolition}>
       <h4>2016</h4>
       <h2>
         <span>Illegal</span> Demolition
@@ -49,14 +48,6 @@ export default function IllegalDemolition() {
         layout="responsive"
       />
       {/*Paper rip*/}
-      <div className="paper-rip">
-        <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
-      </div>
     </section>
   );
 }

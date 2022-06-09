@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from '../../../styles/main/sections/story-of-angel.module.scss'
 
 // import Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import Paper from "../../../public/images/paper-effects/paper-angel.svg"
 import constructionWorker from '../../../public/images/story-08/story08-photo-01.png'
 import brokenAngel from '../../../public/images/story-08/story08-photo-02.png'
 import sideViewAngel from '../../../public/images/story-08/story08-photo-03.png'
@@ -15,7 +15,7 @@ import angelOnBuilding from '../../../public/images/story-08/story08-photo-04.pn
 
 export default function StoryOfAngel() {
   return (
-    <section>
+    <section className={styles.angel}>
         <Image
             src={constructionWorker}
             alt="Construction worker deconstructing angel statue"
@@ -61,12 +61,11 @@ export default function StoryOfAngel() {
         </Link>
         {/*Paper rip for end of section*/}
         <div className="paper-rip">
-        <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
+            <Image
+            alt="Paper rip"
+            src={Paper}
+            layout="responsive"
+            />
       </div>
     </section>
   );
