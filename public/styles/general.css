@@ -29,6 +29,7 @@ body{
 
 header, footer{
     height: 7.5vh;
+    width: 100%;
 }
 
 header{
@@ -42,66 +43,7 @@ header h1 a{
     text-decoration: none;
 }
 
-header nav{
-    position: absolute;
-    top: 0;
-    right: -70vw;
-
-    transform: translateX(0);
-    transition: 0.5s;
-
-    height: 100vh;
-    width: 70vw;
-    padding: 5vh 1em;
-    background-color: var(--beige-color);
-    z-index: 100;
-}
-
 main{
-    z-index: -1;
-}
-
-header nav h2{
-    margin-bottom: 0.75em;
-}
-
-header nav ul{
     width: 100%;
-    height: 100%;
-    list-style-type: none;
-}
-
-header nav ul li{
-    padding: 1em;
-    text-decoration: none;   
-    width: 100%;
-    border-bottom: 1px solid var(--brown-color);
-}
-
-header nav ul li a{
-    text-decoration: none;
-}
-
-header > label{
-    position: absolute;
-    right: 1em;
-    top: 1em;
-}
-
-header nav label{
-    background-color: transparent;
-    border: none;
-    position:absolute;
-    margin: 1em;
-    right: 0;
-    top: 0;
-}
-
-header > input[type='checkbox']{
-    display: none;
-}
-
-header > input[type='checkbox']:checked ~ nav{
-    transform: translateX(-100%);
-    box-shadow: 0px 0px 5px var(--brown-color);
+    height: 92.5vh;
 }
