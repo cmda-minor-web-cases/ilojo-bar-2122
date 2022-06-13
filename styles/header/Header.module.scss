@@ -1,3 +1,53 @@
 .papergradient {
     background-image: linear-gradient(180deg, #FFFDFA 58.7%, rgba(255, 253, 250, 0) 96.78%);
 }
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -30%;
+    z-index: -1;
+    width: 150%;
+    height: 150%;
+    background-image: url(../../public/images/home/map-of-lagos.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    // transform-origin: -5% -5%;
+    transform: rotate(12deg);
+}
+
+.header:after {
+    content: '';
+    background-color: #FFFEFB;
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+}
+
+.header img:before {
+    content: '';
+    border: 10px solid red !important;
+    position: relative;
+}
+
+.header img:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: blue;
+    z-index: -1;
+}
+
