@@ -2,22 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/macaulay-connection.module.scss'
+import styles from "../../../styles/main/sections/macaulay-connection.module.scss";
 
 // Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
-import macaulay from "../../../public/images/story-04/story04-photo-01.png"
-import table from "../../../public/images/story-04/story04-photo-02.png"
-import brothers from "../../../public/images/story-04/story04-photo-03.png"
+import Paper from "../../../public/images/paper-effects/paper-rip.svg";
+import macaulay from "../../../public/images/story-04/story04-photo-01.png";
+import table from "../../../public/images/story-04/story04-photo-02.png";
+import brothers from "../../../public/images/story-04/story04-photo-03.png";
 
 export default function MacaulayConnection() {
   return (
     <section>
-    <Image
-        alt="Photo of Macaulay"
-        src={macaulay}
-        layout="responsive"
-      />
+      <Image alt="Photo of Macaulay" src={macaulay} layout="responsive" />
       <h4>1907 - 1913</h4>
       <h2>
         The <span>Macaulay</span> Connection
@@ -29,17 +25,9 @@ export default function MacaulayConnection() {
         tenetur iste ab ducimus veritatis.
       </p>
       {/*Photo*/}
-      <Image
-        alt="Brothers"
-        src={brothers}
-        layout="responsive"
-      />
+      <Image alt="Brothers" src={brothers} layout="responsive" />
       {/*3d table*/}
-      <Image
-        alt="3d render of table"
-        src={table}
-        layout="responsive"
-      />
+      <Image alt="3d render of table" src={table} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum
         porro reiciendis unde similique in aperiam, autem facilis laudantium
@@ -64,11 +52,7 @@ export default function MacaulayConnection() {
       {/*Paper rip*/}
       <div className="paper-rip">
         <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
+        <Image alt="Paper rip" src={Paper} layout="responsive" />
       </div>
     </section>
   );

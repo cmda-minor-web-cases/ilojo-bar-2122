@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/dark-past.module.scss'
+import styles from "../../../styles/main/sections/dark-past.module.scss";
 
 // Images
 import Dummy from "../../../assets/ilojo-bar-1946.jpg";
 import Paper from "../../../assets/ilojo-bar.jpg";
-import paintedShip from "../../../public/images/story-06/story06-photo-01.png"
-import oldWomen from "../../../public/images/story-06/story06-photo-02.png"
+import paintedShip from "../../../public/images/story-06/story06-photo-01.png";
+import oldWomen from "../../../public/images/story-06/story06-photo-02.png";
 
 export default function DarkPast() {
   return (
@@ -24,11 +24,7 @@ export default function DarkPast() {
         A Dark <span>Past</span>
       </h2>
       {/*Photo*/}
-      <Image
-        alt="Picture of old women"
-        src={oldWomen}
-        layout="responsive"
-      />
+      <Image alt="Picture of old women" src={oldWomen} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum
         porro reiciendis unde similique in aperiam, autem facilis laudantium
