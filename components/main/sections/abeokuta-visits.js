@@ -5,13 +5,13 @@ import Link from "next/link";
 import styles from "../../../styles/main/sections/abeokuta-visits.module.scss";
 
 // Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg";
-import abeokuta from "../../../public/images/story-03/story03-photo-01.png";
-import royals from "../../../public/images/story-03/story03-photo-02.png";
+import Paper from "../../../public/images/paper-effects/paper-abeokuta.svg"
+import abeokuta from "../../../public/images/story-03/story03-photo-01.png"
+import royals from "../../../public/images/story-03/story03-photo-02.png"
 
 export default function AbeoKutaVisits() {
   return (
-    <section>
+    <section className={styles.abeokuta}>
       <h4>1900</h4>
       <h2>
         A vip from <span>Abeokuta visits</span> {`Fernandez'`} house
@@ -50,6 +50,13 @@ export default function AbeoKutaVisits() {
           </svg>
         </a>
       </Link>
+      <div className="paper-rip">
+          <Image  
+          alt="Paper rip"
+          src={Paper}
+          layout="responsive"
+          />
+      </div>
     </section>
   );
 }
