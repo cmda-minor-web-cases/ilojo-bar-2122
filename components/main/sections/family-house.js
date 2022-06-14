@@ -15,7 +15,7 @@ import cover3 from '../../../public/images/story-05/story05-photo-06.png'
 
 export default function FamilyHouse() {
   return (
-    <section>
+    <section className={styles.family}>
         <h4>1950&apos;s</h4>
         <h2>A family house for <span>the Olayias</span></h2>
         <Image

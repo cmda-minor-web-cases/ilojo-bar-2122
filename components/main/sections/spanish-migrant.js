@@ -71,14 +71,6 @@ export default function SpanishMigrant() {
             </svg>
             </a>
         </Link>
-        <div className="paper-rip">
-        <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
-      </div>
     </section>
   );
 }

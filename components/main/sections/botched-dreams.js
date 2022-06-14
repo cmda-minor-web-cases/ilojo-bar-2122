@@ -5,14 +5,14 @@ import Link from 'next/link'
 import styles from '../../../styles/main/sections/botched-dreams.module.scss'
 
 // import Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
+import Paper from "../../../public/images/paper-effects/paper-botched.svg"
 import dirtyIlojo from '../../../public/images/story-07/story07-photo-01.png'
 import cleanIlojo from '../../../public/images/story-07/story07-photo-02.png'
 import statue from '../../../public/images/story-07/story07-photo-03.png'
 
 export default function BotchedDreams() {
   return (
-    <section>
+    <section className={styles.botched}>
         <Image
             src={dirtyIlojo}
             alt="Picture of the author"
@@ -45,13 +45,12 @@ export default function BotchedDreams() {
             remaining essentially unchanged. It was popularised in the 1960s with.
         </p>
         <div className="paper-rip">
-        <div className={styles.papergradient}></div>
-        <Image
-          alt="Paper rip"
-          src={Paper}
-          layout="responsive"
-        />
-      </div>
+          <Image
+            alt="Paper rip"
+            src={Paper}
+            layout="responsive"
+          />
+        </div>
     </section>
     
   );

@@ -16,16 +16,9 @@ import SpanishMigrant from "./sections/spanish-migrant";
 export default function Main() {
   return (
     <main>
-      <Introduction />
-      <SpanishMigrant />
-      <Returnees />
-      <AbeoKutaVisits />
-      <MacaulayConnection />
-      <FamilyHouse />
-      <DarkPast />
-      <BotchedDreams />
-      <StoryOfAngel />
-      <IllegalDemolition />
+      {/* Intro */}
+      {/* Loop door stories */}
+      
     </main>
   );
 }
