@@ -1,17 +1,16 @@
-import Image from 'next/image';
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/family-house.module.scss'
+import styles from "../../../styles/main/sections/family-house.module.scss";
 
 // import Images
-import olaiya from '../../../public/images/story-05/story05-photo-01.png'
-import receipt from '../../../public/images/story-05/story05-photo-02.png'
-import cover1 from '../../../public/images/story-05/story05-photo-03.png'
-import cover2 from '../../../public/images/story-05/story05-photo-04.png'
-import tinubuSquare from '../../../public/images/story-05/story05-photo-05.png'
-import cover3 from '../../../public/images/story-05/story05-photo-06.png'
-
+import olaiya from "../../../public/images/story-05/story05-photo-01.png";
+import receipt from "../../../public/images/story-05/story05-photo-02.png";
+import cover1 from "../../../public/images/story-05/story05-photo-03.png";
+import cover2 from "../../../public/images/story-05/story05-photo-04.png";
+import tinubuSquare from "../../../public/images/story-05/story05-photo-05.png";
+import cover3 from "../../../public/images/story-05/story05-photo-06.png";
 
 export default function FamilyHouse() {
   return (

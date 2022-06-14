@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/macaulay-connection.module.scss'
+import styles from "../../../styles/main/sections/macaulay-connection.module.scss";
 
 // Images
 import Paper from "../../../public/images/paper-effects/paper-macaulay.svg"
@@ -29,17 +29,9 @@ export default function MacaulayConnection() {
         tenetur iste ab ducimus veritatis.
       </p>
       {/*Photo*/}
-      <Image
-        alt="Brothers"
-        src={brothers}
-        layout="responsive"
-      />
+      <Image alt="Brothers" src={brothers} layout="responsive" />
       {/*3d table*/}
-      <Image
-        alt="3d render of table"
-        src={table}
-        layout="responsive"
-      />
+      <Image alt="3d render of table" src={table} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum
         porro reiciendis unde similique in aperiam, autem facilis laudantium

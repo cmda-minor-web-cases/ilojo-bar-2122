@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/abeokuta-visits.module.scss'
+import styles from "../../../styles/main/sections/abeokuta-visits.module.scss";
 
 // Images
 import Paper from "../../../public/images/paper-effects/paper-abeokuta.svg"
@@ -18,11 +18,7 @@ export default function AbeoKutaVisits() {
       </h2>
       <div>
         {/*Photo*/}
-        <Image
-          alt="Abeokuta"
-          src={abeokuta}
-          layout="responsive"
-        />
+        <Image alt="Abeokuta" src={abeokuta} layout="responsive" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
           deserunt sit inventore neque asperiores ullam, natus excepturi,
@@ -32,11 +28,7 @@ export default function AbeoKutaVisits() {
       </div>
 
       {/*Photo*/}
-      <Image
-        alt="Royal family"
-        src={royals}
-        layout="responsive"
-      />
+      <Image alt="Royal family" src={royals} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum
         porro reiciendis unde similique in aperiam, autem facilis laudantium

@@ -1,5 +1,5 @@
 // Styles
-import styles from '../../styles/main/Main.module.scss'
+import styles from "../../styles/main/Main.module.scss";
 
 // sections
 import Introduction from "./sections/introduction";

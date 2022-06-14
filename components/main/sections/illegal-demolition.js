@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Styles
-import styles from '../../../styles/main/sections/illegal-demolition.module.scss'
+import styles from "../../../styles/main/sections/illegal-demolition.module.scss";
 
 // Images
 import ilojoBalcon from '../../../public/images/story-09/story09-photo-01.png'
@@ -28,11 +28,7 @@ export default function IllegalDemolition() {
         src={ilojoBalcon}
         layout="responsive"
       />
-      <Image
-        alt="Wrecking ball"
-        src={wreckingBall}
-        layout="responsive"
-      />
+      <Image alt="Wrecking ball" src={wreckingBall} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
         tempore ex harum velit est. Aspernatur dolorem aliquam voluptatibus
@@ -42,11 +38,7 @@ export default function IllegalDemolition() {
       {/* 
         Video of demolition
       */}
-      <Image
-        alt="Excavator"
-        src={excavator}
-        layout="responsive"
-      />
+      <Image alt="Excavator" src={excavator} layout="responsive" />
       {/*Paper rip*/}
     </section>
   );

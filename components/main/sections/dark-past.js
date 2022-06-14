@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/dark-past.module.scss'
+import styles from "../../../styles/main/sections/dark-past.module.scss";
 
 // Images
 import Paper from "../../../public/images/paper-effects/paper-dark.svg";
@@ -25,11 +25,7 @@ export default function DarkPast() {
         A Dark <span>Past</span>
       </h2>
       {/*Photo*/}
-      <Image
-        alt="Picture of old women"
-        src={oldWomen}
-        layout="responsive"
-      />
+      <Image alt="Picture of old women" src={oldWomen} layout="responsive" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum
         porro reiciendis unde similique in aperiam, autem facilis laudantium

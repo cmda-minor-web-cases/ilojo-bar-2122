@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/story-of-angel.module.scss'
+import styles from "../../../styles/main/sections/story-of-angel.module.scss";
 
 // import Images
 import Paper from "../../../public/images/paper-effects/paper-angel.svg"

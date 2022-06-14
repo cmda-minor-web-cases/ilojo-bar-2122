@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/returnees-from-brazil.module.scss'
+import styles from "../../../styles/main/sections/returnees-from-brazil.module.scss";
 
 // import Images
 import Papertop from "../../../public/images/paper-effects/paper-returnees-top.svg"

@@ -1,16 +1,16 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 // Styles
-import styles from '../../../styles/main/sections/spanish-migrant.module.scss'
+import styles from "../../../styles/main/sections/spanish-migrant.module.scss";
 
 // import Images
-import Paper from "../../../public/images/paper-effects/paper-rip.svg"
-import shipsInSea from '../../../public/images/story-01/story01-photo-01.png'
-import receipt01 from '../../../public/images/story-01/story01-photo-04.png'
-import receipt02 from '../../../public/images/story-01/story01-photo-03.png'
-import receipt03 from '../../../public/images/story-01/story01-photo-02.png'
-import imigrants from '../../../public/images/story-01/story01-photo-05.png'
+import Paper from "../../../public/images/paper-effects/paper-rip.svg";
+import shipsInSea from "../../../public/images/story-01/story01-photo-01.png";
+import receipt01 from "../../../public/images/story-01/story01-photo-04.png";
+import receipt02 from "../../../public/images/story-01/story01-photo-03.png";
+import receipt03 from "../../../public/images/story-01/story01-photo-02.png";
+import imigrants from "../../../public/images/story-01/story01-photo-05.png";
 
 export default function SpanishMigrant() {
   return (
