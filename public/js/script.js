@@ -1,9 +1,9 @@
-if (window.location.href.includes('bar.html')) {
+if (window.location.href.includes('bar')) {
     var scene = document.getElementById("scene");
     var parallaxInstance = new Parallax(scene);
 }
 
-if (window.location.href.includes('index.html')) {
+if (window.location.pathname.includes('')) {
     const input = document.querySelector('.switch input');
     const canvas = document.querySelector('.three-module');
     const img = document.querySelector('.ilojobar');
