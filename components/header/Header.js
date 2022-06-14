@@ -16,16 +16,20 @@ export default function Header() {
     <header className={styles.header}>
       {/*Top images*/}
       <div>
-        <Image
-          alt="Ilojo bar top view"
-          src={architectTop}
-          layout="responsive"
-        />
-        <Image
-          alt="Ilojo bar side view"
-          src={architectSide}
-          layout="responsive"
-        />
+        <div className="border">
+          <Image
+            alt="Ilojo bar top view"
+            src={architectTop}
+            layout="responsive"
+          />
+        </div>
+        <div className="border">
+          <Image
+            alt="Ilojo bar side view"
+            src={architectSide}
+            layout="responsive"
+          />
+        </div>
       </div>
       <h1>
         Telling<span> the stories of</span> Ilojo Bar

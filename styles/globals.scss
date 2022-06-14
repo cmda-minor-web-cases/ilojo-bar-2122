@@ -73,6 +73,11 @@ main section:first-of-type, main section:nth-of-type(2) {
   background-color: #F2F0EC;
 }
 
+.border span { 
+  -webkit-box-shadow: 0px 0px 0px 5px #FFFFFF, 0px 0px 0px 6px #E0E0E0, 0px 0px 0px 11px #FFFFFF; 
+  box-shadow: 0px 0px 0px 5px #FFFFFF, 0px 0px 0px 6px #E0E0E0, 0px 0px 0px 11px #FFFFFF;
+}
+
 
 // Pak van hieronder
 main section:nth-of-type(10) {

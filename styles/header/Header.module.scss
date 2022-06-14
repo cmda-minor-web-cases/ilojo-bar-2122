@@ -34,20 +34,3 @@
     z-index: -2;
 }
 
-.header img:before {
-    content: '';
-    border: 10px solid red !important;
-    position: relative;
-}
-
-.header img:after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: -15px;
-    bottom: -15px;
-    background: blue;
-    z-index: -1;
-}
-
