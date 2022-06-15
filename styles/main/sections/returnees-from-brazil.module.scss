@@ -2,6 +2,36 @@
   article {
     &:nth-child(2) {
       background-color: #ccb797;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25rem;
+        background-image: url(../../../public/images/paper-effects/paper-returnees-top.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -25rem;
+        background-image: url(../../../public/images/paper-effects/paper-returnees-bottom.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+      h4,
+      h2,
+      p {
+        position: relative;
+        z-index: 1;
+      }
     }
   }
 }
