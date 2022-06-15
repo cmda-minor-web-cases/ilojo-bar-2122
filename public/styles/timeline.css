@@ -5,11 +5,24 @@ main{
     overflow-x: scroll;
 }
 
+main > a{
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+
 main ul{
     width: 100%;
     height: 85%;
-    display:grid;   
-    grid-auto-flow:column;
+    display: grid;   
+    grid-auto-flow: column;
     align-items: center;
 }
 
