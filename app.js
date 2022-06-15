@@ -2,7 +2,9 @@ import express from "express";
 const app = express();
 import compression from "compression";
 import * as prismicH from "@prismicio/helpers";
-import { client } from './config/prismicConfig.js';
+import {
+    client
+} from './config/prismicConfig.js';
 import ejs from "ejs";
 import path from "path";
 const port = 1855;
@@ -17,33 +19,38 @@ app.use((req, res, next) => {
     res.locals.ctx = {
         prismicH,
     }
-    next()
-})
+    next();
+});
 
 app.get('/', (req, res) => {
     res.render('index');
-})
+});
 
-app.get('/story', async (req, res) => {
-    let stories = await client.getAllByType('info');
-    
-    stories = stories.map(story => {
-        return {
-            "uid": story.uid,
-            "title": story.data.title[0].text,
-            "text": story.data.text
-        }
+let stories = await client.getAllByType('info');
+
+stories = stories.map(story => {
+    return {
+        "uid": story.uid,
+        "title": story.data.title[0].text,
+        "text": story.data.text
+    }
+});
+
+stories = stories.sort((a, b) => a.uid - b.uid);
+
+app.get('/bar', async (req, res) => {
+    res.render('bar', {
+        stories
     });
- 
-    stories = stories.sort((a, b) => a.uid - b.uid);
-
-    res.render('story', { stories });
-})
+});
 
 app.get('/:title', (req, res) => {
-    res.render('story1')
-})
+    let singleStory = stories.filter(story => story.title.split(' ').join('_').toLowerCase() === req.params.title)
+    res.render('story', {
+        singleStory
+    });
+});
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
-})
+});
