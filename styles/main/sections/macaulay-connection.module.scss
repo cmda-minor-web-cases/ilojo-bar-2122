@@ -1,3 +1,7 @@
-.macaulay {
-    background-color: #E0D3CE;
+.main {
+  article {
+    &:nth-child(4) {
+      background-color: #e0d3ce;
+    }
+  }
 }

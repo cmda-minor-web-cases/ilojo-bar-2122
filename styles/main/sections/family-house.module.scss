@@ -1,3 +1,7 @@
-.family {
-    background-color: #EFE0C9;
+.main {
+  article {
+    &:nth-child(5) {
+      background-color: #efe0c9;
+    }
+  }
 }

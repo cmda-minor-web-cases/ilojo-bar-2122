@@ -1,7 +1,7 @@
-.abeokuta {
-    background-color: #FFFFFF;
-}
-
-body {
-    background-color: red;
+.main {
+  article {
+    &:nth-child(3) {
+      background-color: #fff;
+    }
+  }
 }
