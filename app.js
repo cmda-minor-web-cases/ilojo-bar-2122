@@ -36,7 +36,7 @@ app.get('/story', async (req, res) => {
             "text": story.data.text
         }
     })
-
+ 
     stories = stories.sort((a, b) => a.uid - b.uid)
 
     res.render('story', { stories })
