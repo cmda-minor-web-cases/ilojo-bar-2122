@@ -1,24 +1,25 @@
 // Styles
 import styles from "../../styles/main/Main.module.scss";
+import Image from "next/image";
 
-// sections
-import Introduction from "./sections/introduction";
-import IllegalDemolition from "./sections/illegal-demolition";
-import StoryOfAngel from "./sections/story-of-angel";
-import BotchedDreams from "./sections/botched-dreams";
-import DarkPast from "./sections/dark-past";
-import FamilyHouse from "./sections/family-house";
-import MacaulayConnection from "./sections/macaulay-connection";
-import AbeoKutaVisits from "./sections/abeokuta-visits";
-import Returnees from "./sections/returnees-from-brazil";
-import SpanishMigrant from "./sections/spanish-migrant";
+import { getAllStories } from "../../pages/api/api.js";
 
-export default function Main() {
+export default function Main({stories}) {
   return (
     <main>
       {/* Intro */}
       {/* Loop door stories */}
+      <div>
+      </div>
       
     </main>
   );
 }
+
+export async function getStaticProps() {
+  const stories = (await getAllStories()) || [];
+  return {
+    props: { stories },
+  };
+}
+
