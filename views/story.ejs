@@ -1,0 +1,11 @@
+<body class="story">
+    <main>
+        <% stories.forEach(story => { %>
+            <article>
+            <h1><%- story.title %></h1>
+            <% story.text.forEach(paragraph => { %>
+            <p><%- paragraph.text %></p>
+            <% }) %>
+        </article>
+        <% }) %>
+    </main>
