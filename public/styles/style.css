@@ -10,6 +10,10 @@ main{
     align-items: center;
 }
 
+main img{
+    max-width: 1000px;
+}
+
 main > a{
     color: var(--beige-color);
     background-color: var(--brown-color);
@@ -18,6 +22,3 @@ main > a{
     border-radius: 0.5em;
     margin-top: 1em;
 }
-
-
-
