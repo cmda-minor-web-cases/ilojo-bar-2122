@@ -162,7 +162,7 @@ main div img:nth-of-type(6) {
         opacity:0;
         transform:rotate(180deg);
         right: 10%;
-        top: 60%;
+        top: 100%;
     }
 }
 
