@@ -2,6 +2,25 @@
   article {
     &:nth-child(8) {
       background-color: #fffbf2;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -25rem;
+        background-image: url(../../../public/images/paper-effects/paper-angel.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+      h4,
+      h2,
+      p {
+        position: relative;
+        z-index: 1;
+      }
     }
   }
 }

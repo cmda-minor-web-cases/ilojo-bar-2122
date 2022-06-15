@@ -1,7 +1,37 @@
 .main {
   article {
     &:nth-child(6) {
-      background-color: #4f4d4a;
+      background-color: #434342;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25rem;
+        background-image: url(../../../public/images/paper-effects/paper-dark.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        transform: scaleY(-1);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -25rem;
+        background-image: url(../../../public/images/paper-effects/paper-dark.svg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+      }
+      h4,
+      h2,
+      p {
+        position: relative;
+        z-index: 1;
+      }
     }
   }
 }
