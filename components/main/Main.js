@@ -12,7 +12,7 @@ export default function Main() {
     <main>
       <div>
         {context.map((ctx, i) => (
-          <div key={i}>
+          <article key={i}>
             <h4>{ctx.subtitle}</h4>
             <h2>{ctx.title}</h2>
             <p>{ctx.bodytext01.text}</p>
@@ -31,7 +31,7 @@ export default function Main() {
                 </div>
               );
             })}
-          </div>
+          </article>
         ))}
       </div>
       {/* Intro */}
