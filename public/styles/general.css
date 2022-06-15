@@ -4,9 +4,6 @@
     --brown-color: #544338;
 }
 
-
-
-
 h1, h2, h3{
     font-family: scotch-display, sans-serif;
     font-weight: 400;
@@ -30,7 +27,7 @@ body{
     background-color: var(--beige-color);
 }
 
-header, footer{
+header{
     height: 7.5vh;
     width: 100%;
 }
