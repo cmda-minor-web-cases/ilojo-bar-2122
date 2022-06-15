@@ -1,3 +1,7 @@
-.angel {
-    background-color: #FFFBF2;  
+.main {
+  article {
+    &:nth-child(8) {
+      background-color: #fffbf2;
+    }
+  }
 }

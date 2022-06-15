@@ -9,7 +9,7 @@ export default function Main() {
   const [context] = useContext(Context);
 
   return (
-    <main>
+    <main className={styles.main}>
       {context.map((ctx, i) => (
         <article key={i}>
           <h4>{ctx.subtitle}</h4>

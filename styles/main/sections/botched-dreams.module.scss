@@ -1,3 +1,7 @@
-.botched {
-    background-color: #E2DCCF;
+.main {
+  article {
+    &:nth-child(7) {
+      background-color: #e2dccf;
+    }
+  }
 }
