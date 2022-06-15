@@ -1,12 +1,9 @@
-import "../styles/globals.scss";
-import { AppProvider } from "../context/state";
+import "../styles/globals.scss"
 
 function MyApp({ Component, pageProps }) {
   const { stories } = pageProps;
   return (
-    <AppProvider value={{ stories }}>
       <Component {...pageProps} />
-    </AppProvider>
   );
 }
 

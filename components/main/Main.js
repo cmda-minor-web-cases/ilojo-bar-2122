@@ -2,7 +2,7 @@
 import styles from "../../styles/main/Main.module.scss";
 import Image from "next/image";
 
-import { getAllStories } from "../../pages/api/api.js";
+import { getAllStories } from "../../pages/lib/api.js";
 
 export default function Main({stories}) {
   return (
