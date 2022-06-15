@@ -1,18 +1,21 @@
 import Main from "../components/main/Main";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import { getAllStories } from "./lib/api";
+import { Context } from "../context/state";
+import React, { useState } from "react";
+import { getAllStories } from "../pages/lib/api";
 
 export default function Home({ stories }) {
-  const ctx = useContext(useAppContext);
-  console.log(stories);
+  const [context, setContext] = useState(stories);
 
   return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Context.Provider value={[context, setContext]}>
+      <div>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </Context.Provider>
   );
 }
 
