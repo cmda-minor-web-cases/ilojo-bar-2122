@@ -25,21 +25,23 @@ app.get('/', (req, res) => {
 })
 
 app.get('/story', async (req, res) => {
-    let stories = await client.getAllByType('info')
-
-    console.log(stories)
-
+    let stories = await client.getAllByType('info');
+    
     stories = stories.map(story => {
         return {
             "uid": story.uid,
             "title": story.data.title[0].text,
             "text": story.data.text
         }
-    })
+    });
+ 
+    stories = stories.sort((a, b) => a.uid - b.uid);
 
-    stories = stories.sort((a, b) => a.uid - b.uid)
+    res.render('story', { stories });
+})
 
-    res.render('story', { stories })
+app.get('/:title', (req, res) => {
+    res.render('story1')
 })
 
 app.listen(port, () => {
