@@ -1,10 +1,11 @@
 import Main from "../components/main/Main";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import { getAllStories } from "./api/api.js";
 
-export default function Home() {
-  // console.log(stories);
+export default function Home({ stories }) {
+  const ctx = useContext(useAppContext);
+  console.log(stories);
+
   return (
     <div>
       <Header />

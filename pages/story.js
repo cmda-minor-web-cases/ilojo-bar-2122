@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { getAllStories } from "./api/api";
+import { getAllStories } from "./lib/api";
 
-export default function Test({ stories }) {
+export default function Story({ stories }) {
   console.log(stories);
   return (
     <div>
