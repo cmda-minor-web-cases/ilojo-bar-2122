@@ -1,24 +1,41 @@
 // Styles
 import styles from "../../styles/main/Main.module.scss";
+import Image from "next/image";
 
-// sections
-import Introduction from "./sections/introduction";
-import IllegalDemolition from "./sections/illegal-demolition";
-import StoryOfAngel from "./sections/story-of-angel";
-import BotchedDreams from "./sections/botched-dreams";
-import DarkPast from "./sections/dark-past";
-import FamilyHouse from "./sections/family-house";
-import MacaulayConnection from "./sections/macaulay-connection";
-import AbeoKutaVisits from "./sections/abeokuta-visits";
-import Returnees from "./sections/returnees-from-brazil";
-import SpanishMigrant from "./sections/spanish-migrant";
+import React, { useContext } from "react";
+import { Context } from "../../context/state";
 
 export default function Main() {
+  const [context] = useContext(Context);
+
   return (
     <main>
+      <div>
+        {context.map((ctx, i) => (
+          <div key={i}>
+            <h4>{ctx.subtitle}</h4>
+            <h2>{ctx.title}</h2>
+            <p>{ctx.bodytext01.text}</p>
+            <p>{ctx.bodytext02.text}</p>
+            {ctx.images.map((image) => {
+              return (
+                <div key={image.id}>
+                  <Image
+                    src={image.url}
+                    alt="foto"
+                    layout="responsive"
+                    width="100%"
+                    height="100%"
+                    objectFit="contain"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
       {/* Intro */}
       {/* Loop door stories */}
-      
     </main>
   );
 }

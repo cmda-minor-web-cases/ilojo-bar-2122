@@ -5,10 +5,10 @@ import styles from "../../styles/header/Header.module.scss";
 
 // Images
 import Paper from "../../public/images/paper-effects/paper-header.svg";
-import architectTop from "../../public/images/home/home-photo-01.png"
-import architectSide from "../../public/images/home/home-photo-02.png"
-import oldBuilding from "../../public/images/home/home-photo-03.png"
-import newBuilding from "../../public/images/home/home-photo-04.png"
+import architectTop from "../../public/images/home/home-photo-01.png";
+import architectSide from "../../public/images/home/home-photo-02.png";
+import oldBuilding from "../../public/images/home/home-photo-03.png";
+import newBuilding from "../../public/images/home/home-photo-04.png";
 
 export default function Header() {
   return (
