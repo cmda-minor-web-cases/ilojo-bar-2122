@@ -3,7 +3,7 @@
     &:nth-child(2) {
       background-color: #ccb797;
       position: relative;
-      z-index: 2;
+      z-index: 3;
       &::before {
         content: "";
         position: absolute;

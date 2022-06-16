@@ -2,6 +2,9 @@
   article {
     &:nth-child(9) {
       background-color: #f2f0ec;
+      position: relative;
+      z-index: -2;
+
     }
   }
 }

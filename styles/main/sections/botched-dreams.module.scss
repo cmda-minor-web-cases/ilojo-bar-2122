@@ -3,6 +3,7 @@
     &:nth-child(7) {
       background-color: #e2dccf;
       position: relative;
+      z-index: 0;
 
       &::after {
         content: "";
