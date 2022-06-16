@@ -34,6 +34,5 @@ export const postSendStory = async (req, res) =>{
             console.log('sucesss')
         }
     })
-
     res.redirect('/send')
 }
