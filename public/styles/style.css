@@ -10,5 +10,15 @@ main{
     align-items: center;
 }
 
+main img{
+    max-width: 1000px;
+}
 
-
+main > a{
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}

@@ -3,10 +3,14 @@
 main{
     width: 100%;
     padding: 1em;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-main section p{
+main a{
+    text-decoration: none;
+}
+
+main p{
     margin: 1em 0;
     width: 85%;
 }
@@ -21,7 +25,18 @@ main section input{
     background-color: transparent;
 }
 
-main section textarea{
+main input[type='submit']{
+    display: block;
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    height: auto;
+    width: auto;
+    margin: 1em auto;
+    padding: 0.5em 3em;
+    border-radius: 0.5em;
+}
+
+main textarea{
     width: 80%;
     padding: 1em;
     border: none;
