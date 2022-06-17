@@ -45,6 +45,32 @@ h1, h2 {
   }
 }
 
+.grain::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .04;
+  z-index: 100;
+  pointer-events: none;
+  background-image: url("../public/images/home/grain.gif");
+}
+
+.grain::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  mix-blend-mode: darken;
+  background-color: #2f2f2f;
+  opacity: 0.03;
+}
+
 h4 {
   font-size: clamp(1.2rem, 2vw, 4rem);
   font-family: Helvetica-Bold;

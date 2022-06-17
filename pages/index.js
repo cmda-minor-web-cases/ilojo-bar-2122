@@ -11,6 +11,7 @@ export default function Home({ stories }) {
   return (
     <Context.Provider value={[context, setContext]}>
       <div>
+        <div className='grain'></div>
         <Header />
         <Main />
         <Footer />
