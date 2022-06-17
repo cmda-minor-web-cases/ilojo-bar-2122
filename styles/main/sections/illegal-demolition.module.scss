@@ -1,6 +1,6 @@
 .main {
   article {
-    &:nth-child(9) {
+    &:nth-child(10) {
       background-color: #f2f0ec;
       position: relative;
       z-index: -2;
@@ -12,6 +12,7 @@
       }
       h2 {
         order: 3;
+        width: 60%;
       }
       p:first-of-type {
         order: 4;

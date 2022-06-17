@@ -1,0 +1,7 @@
+.main {
+    article {
+      &:nth-child(2) {
+        background-color: #fffdfa;
+      }
+    }
+}

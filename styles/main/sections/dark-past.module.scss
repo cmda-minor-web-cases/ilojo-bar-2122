@@ -1,6 +1,6 @@
 .main {
   article {
-    &:nth-child(6) {
+    &:nth-child(7) {
       background-color: #434342;
       position: relative;
       z-index: 1;
@@ -72,7 +72,7 @@
         transform: rotate(-4deg) translate(100px, 0px);
         margin: 0;
         position: absolute;
-        top: 47%;
+        top: 45%;
       }
       p:last-of-type {
         order: 6;

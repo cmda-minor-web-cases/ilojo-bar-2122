@@ -1,6 +1,6 @@
 .main {
   article {
-    &:nth-child(8) {
+    &:nth-child(9) {
       background-color: #fffbf2;
       position: relative;
       z-index: -1;
@@ -46,7 +46,7 @@
       }
       h2 {
         order: 4;
-        width: 80%;
+        width: 70%;
       }
       div:nth-of-type(3) {
         order: 5  ;

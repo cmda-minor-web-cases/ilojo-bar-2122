@@ -1,6 +1,6 @@
 .main {
   article {
-    &:nth-child(7) {
+    &:nth-child(8) {
       background-color: #e2dccf;
       position: relative;
       z-index: 0;
@@ -39,7 +39,7 @@
       h2 {
         order: 3;
         margin-bottom: .5em;
-        width: 80%;
+        width: 60%;
       }
       p:first-of-type {
         order: 4;
@@ -48,7 +48,7 @@
       div:nth-of-type(2) {
         order: 5;
         position: absolute;
-        top: 48%;
+        top: 46%;
         left: 0%;
         transform: rotate(-6deg);
         width: clamp(225px, 40%, 375px);
@@ -57,7 +57,7 @@
         order: 6;
         position: absolute;
         width: clamp(200px, 35%, 350px);
-        top: 50%;
+        top: 48%;
         right: 0;
         transform: rotate(6deg);
       }
