@@ -1,9 +1,10 @@
 <%- include('partials/header.ejs') %>
-
+   
+<section>
    <a href="/timeline">< Back</a>
    <h2>Send story</h2>
 
-   <p>On this page you can send your own memories about the Ilojo bar. </p>
+   <p>You can write your own memories about the Ilojo bar in this book! </p>
 
    <form method="POST" enctype="multipart/form-data">
       <input type="text" name="name" id="name" placeholder="Name" required>
@@ -15,6 +16,9 @@
 
       <input type="submit" value="Send story">
    </form>
+</section>
+
+   <img src="../images/boek.png" alt="boek">
     
 </main>
 <script type="module" src="/scripts/sendStory.js"></script>

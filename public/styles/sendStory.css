@@ -3,6 +3,7 @@
 main{
     width: 100%;
     padding: 1em;
+    overflow: hidden;
 }
 
 main a{
@@ -11,10 +12,11 @@ main a{
 
 main p{
     margin: 1em 0;
+    width: 85%;
 }
 
-main input{
-    width: 100%;
+main section input{
+    width: 80%;
     padding: 1em;
     border: none;
     border-bottom: 1px solid var(--brown-color);
@@ -35,11 +37,26 @@ main input[type='submit']{
 }
 
 main textarea{
-    width: 100%;
+    width: 80%;
     padding: 1em;
     border: none;
     border-bottom: 1px solid var(--brown-color);
     display: block;
     margin: 0.5em 0;
     background-color: transparent;
+}
+
+main section {
+    position:absolute;
+    left:10%;
+    top: 15%;
+}
+
+main img {
+    position:relative;
+    width: 220%;
+    height: 100%;
+    top: 0;
+    left: -110%;
+    z-index:-1;
 }
