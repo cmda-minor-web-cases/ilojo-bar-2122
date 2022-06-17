@@ -4,8 +4,68 @@
       background-color: #ccb797;
       position: relative;
       z-index: 3;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      h4 {
+        order: 1;
+      }
+      h2 {
+        order: 2;
+      }
+      p {
+        &:nth-of-type(1) {
+          order: 4;
+          padding-bottom: 15rem;
+        }
+        &:nth-of-type(2) {
+          order: 8;
+          padding-top: 15rem;
+        }
+      }
+      div {
+        &:nth-of-type(1) {
+          order: 3;
+        }
+        &:nth-of-type(2) {
+          position: absolute;
+          bottom: 6%;
+          left: 45%;
+          z-index: 2;
+          transform: translate(-50%, -50%) rotate(8deg);
+          width: clamp(250px, 40%, 400px);
+          order: 5;
+        }
+        &:nth-of-type(3) {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          z-index: 1;
+          transform: translate(-50%, -50%) rotate(3deg);
+          width: clamp(500px, 40%, 600px);
+          order: 5;
+        }
+        &:nth-of-type(4) {
+          position: absolute;
+          bottom: 15%;
+          left: -20%;
+          z-index: 3;
+          transform: translate(0, -50%) rotate(-8deg);
+          width: clamp(230px, 40%, 375px);
+          order: 5;
+        }
+        &:nth-of-type(5) {
+          position: absolute;
+          bottom: 10%;
+          right: -20%;
+          z-index: 3;
+          transform: translate(0, -50%) rotate(-3deg);
+          width: clamp(230px, 40%, 375px);
+          order: 5;
+        }
+      }
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: -57vh;
         left: 0;
@@ -17,7 +77,7 @@
         height: 100vh;
       }
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -57vh;
         left: 0;
@@ -27,12 +87,6 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
-      }
-      h4,
-      h2,
-      p {
-        position: relative;
-        z-index: 1;
       }
     }
   }

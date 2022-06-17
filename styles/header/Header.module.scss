@@ -1,37 +1,61 @@
-.papergradient {
-    background-image: linear-gradient(180deg, #FFFDFA 58.7%, rgba(255, 253, 250, 0) 96.78%);
-}
-
 .header {
-    position: relative;
-    overflow: hidden;
-    z-index: 3;
-}
-
-.header:before {
+  background-color: #ffffff;
+  position: relative;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  z-index: 3;
+  background-image: url(../../public/images/home/map-of-lagos.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &::after {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -30%;
-    z-index: -1;
-    width: 150%;
-    height: 150%;
-    background-image: url(../../public/images/home/map-of-lagos.svg);
-    background-position: 50% 50%;
+    bottom: -25rem;
+    left: 0;
+    background-image: url(../../public/images/paper-effects/paper-header.svg);
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: 80%;
-    // transform-origin: -5% -5%;
-    transform: rotate(12deg);
-}
-
-.header:after {
-    content: '';
-    background-color: #FFFEFB;
-    height: 100%; 
     width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -2;
+    height: 100vh;
+  }
+  .image {
+    &:nth-child(1) {
+      position: absolute;
+      z-index: 2;
+      transform: rotate(-4deg);
+      top: -8%;
+      left: 10%;
+      width: clamp(225px, 40%, 375px);
+      filter: drop-shadow(-2.40083px 1.92066px 3.36116px rgba(0, 0, 0, 0.25));
+    }
+    &:nth-child(2) {
+      position: absolute;
+      z-index: 1;
+      transform: rotate(-10deg);
+      top: 1%;
+      left: -20%;
+      width: clamp(225px, 40%, 375px);
+      filter: drop-shadow(-2.40083px 1.92066px 3.36116px rgba(0, 0, 0, 0.25));
+    }
+    &:nth-child(3) {
+      position: absolute;
+      z-index: 1;
+      transform: rotate(-4deg);
+      bottom: 2%;
+      right: 10%;
+      width: clamp(225px, 40%, 375px);
+      filter: drop-shadow(-2.40083px 1.92066px 3.36116px rgba(0, 0, 0, 0.25));
+    }
+    &:nth-child(4) {
+      position: absolute;
+      z-index: 2;
+      transform: rotate(10deg);
+      bottom: -8%;
+      right: -20%;
+      width: clamp(225px, 40%, 375px);
+      filter: drop-shadow(-2.40083px 1.92066px 3.36116px rgba(0, 0, 0, 0.25));
+    }
+  }
 }
-

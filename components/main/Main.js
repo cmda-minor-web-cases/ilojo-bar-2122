@@ -1,9 +1,9 @@
 // Styles
-import styles from "../../styles/main/Main.module.scss";
-import Image from "next/image";
+import styles from '../../styles/main/Main.module.scss';
+import Image from 'next/image';
 
-import React, { useContext } from "react";
-import { Context } from "../../context/state";
+import React, { useContext } from 'react';
+import { Context } from '../../context/state';
 
 export default function Main() {
   const [context] = useContext(Context);
@@ -21,11 +21,11 @@ export default function Main() {
               <div key={image.id}>
                 <Image
                   src={image.url}
-                  alt="foto"
-                  layout="responsive"
-                  width="100%"
-                  height="100%"
-                  objectFit="contain"
+                  alt='foto'
+                  layout='responsive'
+                  width='100%'
+                  height='100%'
+                  objectFit='contain'
                 />
               </div>
             );
@@ -44,4 +44,3 @@ export async function getStaticProps() {
     props: { stories },
   };
 }
-
