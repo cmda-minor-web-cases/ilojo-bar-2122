@@ -23,6 +23,17 @@ main input{
     background-color: transparent;
 }
 
+main input[type='submit']{
+    display: block;
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    height: auto;
+    width: auto;
+    margin: 1em auto;
+    padding: 0.5em 3em;
+    border-radius: 0.5em;
+}
+
 main textarea{
     width: 100%;
     padding: 1em;

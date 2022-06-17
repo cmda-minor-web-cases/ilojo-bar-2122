@@ -5,12 +5,17 @@
 
    <p>On this page you can send your own memories about the Ilojo bar. </p>
 
-   <form action="POST">
-       <input type="text" placeholder="Name">
-       <input type="email" name="Name" id="" placeholder="email@email.com">
-        <textarea name="Story" id="Story"  rows="10" placeholder="Type your story here..."></textarea>
-        <input type="file" name="File" id="" >
+   <form method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" id="name" placeholder="Name" required>
+      <input type="email" name="mail" id="mail" placeholder="email@email.com" required>
+       
+      <input type="text" name="title" id="title" placeholder="Give your story a title" required>
+      <textarea name="story" id="Story"  rows="10" placeholder="Type your story here..." required></textarea>
+      <input type="file" name="File" id="file">
+
+      <input type="submit" value="Send story">
    </form>
     
 </main>
+<script type="module" src="/scripts/sendStory.js"></script>
 <%- include('partials/foot.ejs') %>
