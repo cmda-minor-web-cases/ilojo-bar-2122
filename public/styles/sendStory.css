@@ -10,13 +10,38 @@ main a{
     text-decoration: none;
 }
 
-main p{
-    margin: 1em 0;
+main > p{
+    margin: 0.5em 0 2em 0;
     width: 85%;
 }
 
-main section input{
-    width: 80%;
+main form{
+    position: relative;
+    padding: 0 10% 0 1em;
+
+}
+
+main form img {
+    position:absolute;
+    width: 220%;
+    height: 130%;
+    top: -12%;
+    left: -110%;
+    z-index:-1;
+}
+
+main form input{
+    width: 100%;
+    padding: 0.25em 1em;
+    border: none;
+    border-bottom: 1px solid var(--brown-color);
+    display: block;
+    margin: 0.5em 0;
+    background-color: transparent;
+}
+
+main textarea{
+    width: 100%;
     padding: 1em;
     border: none;
     border-bottom: 1px solid var(--brown-color);
@@ -31,32 +56,7 @@ main input[type='submit']{
     background-color: var(--brown-color);
     height: auto;
     width: auto;
-    margin: 1em auto;
-    padding: 0.5em 3em;
+    margin: 0.5em auto 1em auto;
+    padding: 0.5em 1em;
     border-radius: 0.5em;
-}
-
-main textarea{
-    width: 80%;
-    padding: 1em;
-    border: none;
-    border-bottom: 1px solid var(--brown-color);
-    display: block;
-    margin: 0.5em 0;
-    background-color: transparent;
-}
-
-main section {
-    position:absolute;
-    left:10%;
-    top: 15%;
-}
-
-main img {
-    position:relative;
-    width: 220%;
-    height: 100%;
-    top: 0;
-    left: -110%;
-    z-index:-1;
 }
