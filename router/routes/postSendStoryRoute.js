@@ -2,12 +2,17 @@ import nodemailer from 'nodemailer'
 import * as dotenv from "dotenv"
 import 'dotenv/config'
 
+import { multerUploads } from './multer.js'
+
 const {
     MAIL_PW
   } = process.env
   dotenv.config()
 
 export const postSendStory = async (req, res) =>{   
+    // uploaded files to images/uploads
+    multerUploads()
+    
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         host: "smtp.gmail.com",

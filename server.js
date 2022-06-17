@@ -1,4 +1,5 @@
 import express from 'express'
+import multer from 'multer'
 import bodyParser from 'body-parser'
 import * as dotenv from "dotenv"
 import 'dotenv/config'
