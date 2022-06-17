@@ -4,11 +4,13 @@
       background-color: #e2dccf;
       position: relative;
       z-index: 0;
+      display: flex;
+      flex-direction: column;
 
       &::after {
         content: "";
         position: absolute;
-        bottom: -25rem;
+        bottom: -57vh;
         left: 0;
         background-image: url(../../../public/images/paper-effects/paper-botched.svg);
         background-position: center;
@@ -23,6 +25,47 @@
         position: relative;
         z-index: 1;
       }
+      div:first-of-type {
+        order: 1;
+        position: absolute;
+        width: clamp(225px, 40%, 375px);
+        right: -13%;
+        top: 2%;
+        transform: rotate(-15deg);
+      }
+      h4 {
+        order: 2;
+      }
+      h2 {
+        order: 3;
+        margin-bottom: .5em;
+        width: 80%;
+      }
+      p:first-of-type {
+        order: 4;
+        margin-bottom: 70%;
+      }
+      div:nth-of-type(2) {
+        order: 5;
+        position: absolute;
+        top: 48%;
+        left: 0%;
+        transform: rotate(-6deg);
+        width: clamp(225px, 40%, 375px);
+      }
+      div:last-of-type {
+        order: 6;
+        position: absolute;
+        width: clamp(200px, 35%, 350px);
+        top: 50%;
+        right: 0;
+        transform: rotate(6deg);
+      }
+      p:last-of-type {
+        order: 7;
+        margin-bottom: 40%;
+      }
+
     }
   }
 }
