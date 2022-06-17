@@ -2,7 +2,7 @@
 
 main{
     width: 100vw;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 main h1{
@@ -18,18 +18,46 @@ main > a{
     text-decoration: none;
 }
 
+main img{
+    max-width: 500px;
+}
 
-main p, main img {
+main > div{
+    max-width: 100%;
+    position: relative;
+
+    margin-top: 30px;
+    transform: rotate(2deg);
+}
+
+main > div::before{
+    content: ' ';
+    background-image: url(../images/hanger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 35px);
+    top: -30px;
+}
+
+main > div img{
+    border: 0.4em solid var(--brown-color);
+    box-shadow: 2px 2px 10px var(--brown-color);
+}
+
+main p, main > img {
     opacity: 0;
     transform:scale(0.75) rotate(-10deg);
     transition:2s.1s;
     transform-origin:0 0;
-  }
+}
 
-  p.observed, img.observed {
+p.observed, main > img.observed {
     opacity: 1;
     transform:scale(1) rotate(0);
-  }
+}
 
   
   

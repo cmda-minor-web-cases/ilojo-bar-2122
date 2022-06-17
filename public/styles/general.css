@@ -5,13 +5,13 @@
 }
 
 h1, h2, h3{
-    font-family: scotch-display, sans-serif;
+    font-family: scotch-display, serif;
     font-weight: 400;
     font-style: normal;
 }
 
-p, button, a, input, textarea, ::before, ::after{
-    font-family: scotch-display, sans-serif;
+p, button, a, input, textarea, placeholder, ::before, ::after{
+    font-family: scotch-display, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.1em;

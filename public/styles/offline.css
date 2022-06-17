@@ -1,0 +1,22 @@
+@import url(general.css);
+
+main{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p{
+    text-align: center;
+}
+
+main > a{
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
