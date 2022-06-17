@@ -1,25 +1,21 @@
 <%- include('partials/header.ejs') %>
-   
-<section>
    <a href="/timeline">< Back</a>
    <h2>Send story</h2>
 
    <p>You can write your own memories about the Ilojo bar in this book! </p>
-
+      
    <form method="POST" enctype="multipart/form-data">
       <input type="text" name="name" id="name" placeholder="Name" required>
       <input type="email" name="mail" id="mail" placeholder="email@email.com" required>
        
       <input type="text" name="title" id="title" placeholder="Give your story a title" required>
-      <textarea name="story" id="Story"  rows="10" placeholder="Type your story here..." required></textarea>
+      <textarea name="story" id="Story"  rows="8" placeholder="Type your story here..." required></textarea>
       <input type="file" name="File" id="file">
 
       <input type="submit" value="Send story">
+      <img src="../images/boek.png" alt="boek">
    </form>
-</section>
-
-   <img src="../images/boek.png" alt="boek">
-    
+   
 </main>
 <script type="module" src="/scripts/sendStory.js"></script>
 <%- include('partials/foot.ejs') %>
