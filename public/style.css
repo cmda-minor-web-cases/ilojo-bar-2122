@@ -69,7 +69,7 @@ main section:first-child img:last-child {
   height: auto;
 }
 
-a {
+.home-page a {
   position: absolute;
   top: 28%;
   left: 32%;
@@ -138,7 +138,7 @@ main section:nth-child(2) img:first-of-type {
 /* Bar Page */
 
 .bar-page {
-  background: url(img/bar-background.svg);
+  background: url(img/bar-background.png);
   background-size: cover;
   box-sizing: border-box;
   /* overflow: hidden; */
@@ -241,21 +241,20 @@ ul {
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
   grid-template-areas: 'titel-1 titel-2' "titel-3 titel-4" "titel-5 titel-6" "titel-7 titel-8" "titel-9 titel-9";
-}
-
-.menu ol {
   list-style: none;
 }
 
-.menu a {
+.menu li {
   width: 10vmin;
-  color: #2d2209;
   background-color: #FFFCDE;
   border-radius: 10px;
-  text-decoration: none;
   text-align: center;
+}
+
+.menu a {
+  color: #2d2209;
+  text-decoration: none;
 }
 
 .titel-1 { grid-area: titel-1; }

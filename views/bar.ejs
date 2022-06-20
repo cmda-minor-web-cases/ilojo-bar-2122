@@ -37,13 +37,11 @@
               <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
             </li>
           </ul>
-          <div class="menu">
-            <ol>
+            <ol class="menu">
               <% stories.forEach(story => { %> 
                   <% let storyTitle = story.title.split(' ').join('_').toLowerCase() %>           
                   <li><a class="titel-<%= story.uid %>" href="/<%= storyTitle %>"><%- story.title %></a></li>
               <% }) %>
-         </div>
           <img src="img/hands.svg" alt="hands that hold the menu" />
         </section>
     </main>
