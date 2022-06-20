@@ -12,6 +12,8 @@ const {
 export const postSendStory = async (req, res) =>{   
     // uploaded files to images/uploads
     multerUploads()
+
+    console.log(req.body)
     
     const transporter = nodemailer.createTransport({
         service: 'gmail',

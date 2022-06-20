@@ -28,7 +28,7 @@ main ul{
 
 main ul li{
     width: 70vw;
-    max-width: 400px;
+    max-width: 350px;
     display: block;
     margin: 0 2em;
 }
@@ -38,7 +38,7 @@ main ul li div{
     position: relative;
 }
 
-main ul li div::before{
+main ul li:not(:last-child) div::before{
     content: ' ';
     background-image: url(../images/hanger.png);
     background-size: contain;
@@ -94,7 +94,6 @@ main > ul li:last-of-type{
 
 main ul li:last-of-type a{
     display: block;
-    margin: 1em 0 2em 0 ;
 }
 
 main ul li:last-of-type img{
@@ -108,6 +107,36 @@ main ul li:last-of-type img{
 main ul li:last-of-type img:first-of-type{
     height: 25%;
     -webkit-filter: drop-shadow(2px 2px 5px var(--brown-color));
+}
+
+main ul li:last-of-type div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul li:last-of-type div a:nth-of-type(2){
+    display: block;
+    text-decoration: none;
+    transform: rotate(90deg);
+    text-align: right;
+    width: 10px;
+    height: auto;
+    font-size: 2em;
+    animation: move 2s infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0) rotate(90deg);
+    }
+    50%{
+        transform: translateY(0.5em) rotate(90deg);
+    }
+    100%{
+        transform: translateY(0) rotate(90deg);
+    }
 }
 
 /* floor */

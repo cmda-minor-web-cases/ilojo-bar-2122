@@ -7,13 +7,16 @@
                 <div>
                     <img src="<%- item.data.image1.url %>" alt="" width="100%">
                 </div>
-                <a href="/timeline/<%- item.uid %>">Read the story ></a>
+                <a href="/timeline/<%- item.uid %>">Read the story></a>
             </li>
         <% }) %>
         
         <li>
             <img src="/images/clock.png" alt="clock">
-            <a href="/send">Write your own story</a>
+            <div>
+                <a href="/send">Write your own story</a>
+                <a href="/send">></a>   
+            </div>
             <img src="/images/boek-standaard.png" alt="book">
         </li>
     </ul>
