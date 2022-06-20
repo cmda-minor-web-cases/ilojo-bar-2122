@@ -6,6 +6,7 @@
       display: flex;
       flex-direction: column;
 
+<<<<<<< HEAD
       h4 {
         order: 2;
         margin-top: 1em;
@@ -19,6 +20,19 @@
         margin-bottom: 110%;
       }
       div:first-of-type {
+=======
+      h4 { 
+        order: 2;
+        margin-top: 1em;
+        margin-bottom: 0
+      }
+      h2 { order: 3}
+      p:first-of-type { 
+        order: 4;
+        margin-bottom: 110%;
+      }
+      div:first-of-type { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 1;
         position: absolute;
         width: clamp(225px, 40%, 375px);
@@ -28,7 +42,11 @@
         transform: rotate(-15deg);
         transform-origin: -50% -50%;
       }
+<<<<<<< HEAD
       div:nth-of-type(6) {
+=======
+      div:nth-of-type(6) { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 5;
         position: absolute;
         top: 43%;
@@ -37,7 +55,11 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-25deg);
       }
+<<<<<<< HEAD
       div:nth-of-type(3) {
+=======
+      div:nth-of-type(3) { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 6;
         position: absolute;
         top: 48%;
@@ -46,7 +68,11 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(25deg);
       }
+<<<<<<< HEAD
       div:nth-of-type(5) {
+=======
+      div:nth-of-type(5) { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 7;
         position: absolute;
         top: 53%;
@@ -55,7 +81,11 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(10deg);
       }
+<<<<<<< HEAD
       div:nth-of-type(4) {
+=======
+      div:nth-of-type(4) { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 8;
         position: absolute;
         top: 55%;
@@ -64,7 +94,11 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-10deg);
       }
+<<<<<<< HEAD
       div:nth-of-type(2) {
+=======
+      div:nth-of-type(2) { 
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
         order: 9;
         position: absolute;
         top: 50%;
@@ -73,10 +107,18 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-10deg) translateX(50%);
       }
+<<<<<<< HEAD
       p:last-of-type {
         order: 10;
         margin-bottom: 134px;
       }
+=======
+      p:last-of-type { 
+        order: 10;
+        margin-bottom: 134px;
+      }
+
+>>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
     }
   }
 }

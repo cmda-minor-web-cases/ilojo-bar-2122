@@ -7,15 +7,14 @@ import { Context } from '../../context/state';
 
 export default function Main() {
   const [context] = useContext(Context);
-
   return (
     <main className={styles.main}>
       {context.map((ctx, i) => (
         <article key={i}>
-          <h4>{ctx.subtitle}</h4>
+          {(ctx.subtitle !== null) ? <h4>{ctx.subtitle}</h4> : ''}
           <h2>{ctx.title}</h2>
-          <p>{ctx.bodytext01.text}</p>
-          <p>{ctx.bodytext02.text}</p>
+          {(ctx.bodytext01.text !== '') ? <p>{ctx.bodytext01.text}</p> : ''}
+          {(ctx.bodytext02.text !== '') ? <p>{ctx.bodytext02.text}</p> : ''}
           {ctx.images.map((image) => {
             return (
               <div key={image.id}>

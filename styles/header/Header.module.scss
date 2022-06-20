@@ -20,6 +20,12 @@
     width: 100%;
     height: 100vh;
   }
+  h1 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 8rem);
+    width: 80%;
+    margin: auto 10%;
+  }
   .image {
     &:nth-child(1) {
       position: absolute;
