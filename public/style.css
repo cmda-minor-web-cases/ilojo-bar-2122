@@ -5,8 +5,41 @@
 
 @font-face {
   font-family: "Baloo";
-  src: url(css/BalooBhai-Regular.ttf);
+  src: url(fonts/BalooBhai2-Regular.ttf);
+  font-weight: 400;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url(fonts/BalooBhai2-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url(fonts/BalooBhai2-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url(fonts/BalooBhai2-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url(fonts/BalooBhai2-ExtraBold.ttf);
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: Baloo;
 }
 
 /* Home page */
@@ -16,10 +49,6 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-main {
-  font-family: Baloo;
 }
 
 main section:first-child {
@@ -72,7 +101,6 @@ h2,
 h3,
 main section:nth-child(2) p {
   text-align: center;
-  font-weight: 100;
 }
 
 h1,
@@ -91,14 +119,13 @@ h3 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 1px;
   margin-top: -0.5em;
 }
 
 main section:nth-child(2) p {
   font-size: 25px;
-  font-weight: 100;
   margin: 1em 0 1em 0;
 }
 
@@ -113,7 +140,6 @@ main section:nth-child(2) img:first-of-type {
 .bar-page {
   background: url(img/bar-background.svg);
   background-size: cover;
-  font-family: Baloo;
   box-sizing: border-box;
   /* overflow: hidden; */
 }
@@ -241,3 +267,42 @@ ul {
 .titel-7 { grid-area: titel-7; }
 .titel-8 { grid-area: titel-8; }
 .titel-9 { grid-area: titel-9; }
+
+/* Story page */
+
+.story-page {
+  background: radial-gradient(50% 50% at 50% 50%, #efcab0 0%, #b47759 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.story-page header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.story-page .wood-sign {
+  width: 95vmin;
+  margin: 0 auto;
+}
+
+.story-page main {
+  padding: 1rem;
+}
+
+.story-page h1 {
+  font-size: 6vmin;
+  color: #f2f0bd;
+  text-align: center;
+  margin-top: -2.8em;
+  width: 85vmin;
+  white-space: wrap;
+  line-height: 1.2rem;
+}
+
+.story-page p {
+  margin-bottom: 1rem;
+}
