@@ -51,20 +51,20 @@ h2 {
 }
 
 .grain::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: .04;
+  opacity: 0.04;
   z-index: 100;
   pointer-events: none;
-  background-image: url("../public/images/home/grain.gif");
+  background-image: url('../public/images/home/grain.gif');
 }
 
 .grain::after {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   bottom: 0;
@@ -96,11 +96,7 @@ footer {
   width: 100%;
 }
 
-<<<<<<< HEAD
 main article:not(article:nth-child(2), article:nth-child(5)) {
-=======
-main article:not(article:nth-child(3), article:nth-child(7)) {
->>>>>>> 6294265fcb1cfffb917fa70287641f7915671430
   padding-top: 134px;
 }
 
