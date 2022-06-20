@@ -35,7 +35,7 @@ stories = stories.map(story => {
         "text": story.data.text
     }
 });
-
+ 
 stories = stories.sort((a, b) => a.uid - b.uid);
 
 app.get('/bar', async (req, res) => {
