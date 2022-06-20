@@ -1,7 +1,7 @@
 export default function generateHeading() {
     if (typeof window !== "undefined") {
 
-        let node = document.querySelectorAll('h2');
+        let node = document.querySelectorAll('h2, h1');
 
         node.forEach(node => {
             if (node) {

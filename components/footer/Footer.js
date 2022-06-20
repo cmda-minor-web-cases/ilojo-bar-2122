@@ -1,23 +1,18 @@
-import Image from "next/image";
+import React, { useContext } from 'react';
+import { Context } from '../../context/state';
+import Image from 'next/image';
 
 // Styles
-import styles from "../../styles/footer/Footer.module.scss";
-
-// Images
-import Dummy from "../../assets/ilojo-bar-1946.jpg";
+import styles from '../../styles/footer/Footer.module.scss';
 
 export default function Footer() {
-  return (
-    <footer className={styles.footer}>
-      <h2>
-        The ilojo bar in it&#39;s full glory
-      </h2>
-      {/*3D Ilojo Bar*/}
-      <Image
-        alt="The guitarist in the concert."
-        src={Dummy}
-        layout="responsive"
-      />
-    </footer>
-  );
+  const [context] = useContext(Context);
+  return <footer className={styles.footer}></footer>;
+}
+
+export async function getStaticProps() {
+  const footer = (await getAllFooterData()) || [];
+  return {
+    props: { footer },
+  };
 }

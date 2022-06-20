@@ -1,10 +1,13 @@
-import { GraphQLClient, gql } from "graphql-request";
+import {
+  GraphQLClient,
+  gql
+} from "graphql-request";
 const graphcms = new GraphQLClient(process.env.GRAPHCMS_ENDPOINT);
 let mains;
 let blocks;
 
 export async function getAllStories() {
-  const query = gql`
+  const query = gql `
     {
       mains {
         blocks {
