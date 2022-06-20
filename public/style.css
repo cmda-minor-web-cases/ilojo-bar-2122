@@ -43,12 +43,63 @@ body {
 }
 
 /* Home page */
+@keyframes lift {
+  0% {
+    transform: translateY(0)
+  }
+  5% {
+    transform: translateY(-10px);
+  
+  }
+  10% {
+    transform: rotate(2deg); 
+  }
+  15%{
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: translateY(1px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  } 
+}
+
 
 .home-page {
   background: radial-gradient(50% 50% at 50% 50%, #efcab0 0%, #b47759 100%);
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+main {
+  font-family: Baloo;
+}
+
+ 
+main section:first-child a img {
+  opacity: 0.8;
+  animation: lift 3s infinite;
+}
+
+
+main section:first-child a:hover img {
+  filter: drop-shadow(0 0 0.75rem #56392b50);
+  opacity: 1;
+  animation: lift paused;
+}
+
+main section:first-child a:focus img {
+  filter: drop-shadow(0 0 0.75rem #56392b30);
+  border: none;
+  opacity: 1;
 }
 
 main section:first-child {
