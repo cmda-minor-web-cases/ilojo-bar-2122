@@ -12,8 +12,8 @@
 <use xlink:href="#image1_147_2" transform="translate(0 -0.00198228) scale(0.00125 0.00191231)"/>
 </pattern>
 <linearGradient id="paint0_linear_147_2" x1="228" y1="0" x2="228" y2="358.109" gradientUnits="userSpaceOnUse">
-<stop offset="0.495042" stop-color="#4F4D4A"/>
-<stop offset="0.816192" stop-color="#4F4D4A" stop-opacity="0"/>
+<stop offset="0.495042" stop-color="#434342"/>
+<stop offset="0.816192" stop-color="#434342" stop-opacity="0"/>
 </linearGradient>
 <clipPath id="clip0_147_2">
 <rect width="340" height="134" fill="white" transform="matrix(1 0 0 -1 0 134)"/>
