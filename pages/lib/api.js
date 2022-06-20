@@ -2,8 +2,9 @@ import { GraphQLClient, gql } from "graphql-request";
 const graphcms = new GraphQLClient(process.env.GRAPHCMS_ENDPOINT);
 let mains;
 let blocks;
+let header
 
-export async function getAllStories() {
+export async function getAllStories(section) {
   const query = gql`
     {
       mains {
@@ -25,6 +26,18 @@ export async function getAllStories() {
           }
         }
       }
+      headersConnection {
+        edges {
+          node {
+            heading
+            id
+            image {
+              url
+              id
+            }
+          }
+        }
+      }
     }
   `;
 
@@ -33,5 +46,13 @@ export async function getAllStories() {
   mains.forEach((item) => {
     blocks = item.blocks;
   });
-  return blocks;
+  results.headersConnection.edges.forEach(result => {
+    console.log(result);
+    header = result.node
+  })
+  console.log(section);
+
+  const sections = {blocks, header}
+  return sections
 }
+
