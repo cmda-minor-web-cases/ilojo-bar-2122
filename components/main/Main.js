@@ -7,9 +7,10 @@ import { Context } from '../../context/state';
 
 export default function Main() {
   const [context] = useContext(Context);
+  const stories = context.blocks
   return (
     <main className={styles.main}>
-      {context.map((ctx, i) => (
+      {stories.map((ctx, i) => (
         <article key={i}>
           {(ctx.subtitle !== null) ? <h4>{ctx.subtitle}</h4> : ''}
           <h2>{ctx.title}</h2>
@@ -31,8 +32,6 @@ export default function Main() {
           })}
         </article>
       ))}
-      {/* Intro */}
-      {/* Loop door stories */}
     </main>
   );
 }

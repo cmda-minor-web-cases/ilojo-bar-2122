@@ -9,7 +9,12 @@ import architectSide from '../../public/images/home/home-photo-02.png';
 import oldBuilding from '../../public/images/home/home-photo-03.png';
 import newBuilding from '../../public/images/home/home-photo-04.png';
 
+// Context 
+import React, { useContext } from 'react';
+import { Context } from '../../context/state';
+
 export default function Header() {
+  const [context] = useContext(Context);
   return (
     <header className={styles.header}>
       {/*Top images*/}
@@ -47,4 +52,11 @@ export default function Header() {
       </div>
     </header>
   );
+}
+
+export async function getStaticProps() {
+  const stories = (await getAllStories()) || [];
+  return {
+    props: { stories },
+  };
 }
