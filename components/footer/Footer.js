@@ -7,12 +7,28 @@ import styles from '../../styles/footer/Footer.module.scss';
 
 export default function Footer() {
   const [context] = useContext(Context);
-  return <footer className={styles.footer}></footer>;
+  const footerContent = context.footer;
+  console.log(footerContent.image.url);
+  return (
+    <footer className={styles.footer}>
+      <h2>{footerContent.title}</h2>
+      <div key={footerContent.image.id} className={styles.image}>
+        <Image
+          src={footerContent.image.url}
+          alt='foto'
+          layout='responsive'
+          width='100%'
+          height='100%'
+          objectFit='cover'
+        />
+      </div>
+    </footer>
+  );
 }
 
 export async function getStaticProps() {
-  const footer = (await getAllFooterData()) || [];
+  const stories = (await getAllStories()) || [];
   return {
-    props: { footer },
+    props: { stories },
   };
 }

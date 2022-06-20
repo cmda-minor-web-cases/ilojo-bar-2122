@@ -9,12 +9,13 @@ import architectSide from '../../public/images/home/home-photo-02.png';
 import oldBuilding from '../../public/images/home/home-photo-03.png';
 import newBuilding from '../../public/images/home/home-photo-04.png';
 
-// Context 
+// Context
 import React, { useContext } from 'react';
 import { Context } from '../../context/state';
 
 export default function Header() {
   const [context] = useContext(Context);
+  const stories = context.header;
   return (
     <header className={styles.header}>
       {/*Top images*/}
