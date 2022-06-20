@@ -1,9 +1,18 @@
 import '../styles/globals.scss';
-import generateHeading from '../components/generateHeading';
+import dynamic from 'next/dynamic';
+
+const DynamicComponentWithNoSSR = dynamic(
+  () => import('../components/generateHeading'),
+  { ssr: false }
+);
 
 function MyApp({ Component, pageProps }) {
-  generateHeading();
-  return <Component {...pageProps} />;
+  return (
+    <div>
+      <DynamicComponentWithNoSSR />
+      <Component {...pageProps} />
+    </div>
+  );
 }
 
 export default MyApp;

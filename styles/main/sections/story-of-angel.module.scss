@@ -1,14 +1,16 @@
 .main {
   article {
-    &:nth-child(8) {
+    &:nth-child(9) {
       background-color: #fffbf2;
       position: relative;
       z-index: -1;
+      display: flex;
+      flex-direction: column;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
-        bottom: -25rem;
+        bottom: -57vh;
         left: 0;
         background-image: url(../../../public/images/paper-effects/paper-angel.svg);
         background-position: center;
@@ -22,6 +24,53 @@
       p {
         position: relative;
         z-index: 1;
+      }
+      div:nth-of-type(1) {
+        order: 1;
+        position: absolute;
+        top: 10%;
+        width: clamp(200px, 35%, 350px);
+        transform: rotate(-3deg);
+      }
+      div:nth-of-type(2) {
+        order: 2;
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        width: clamp(200px, 35%, 350px);
+        transform: rotate(7deg);
+      }
+      h4 {
+        order: 3;
+        margin-top: 60%;
+      }
+      h2 {
+        order: 4;
+        width: 70%;
+      }
+      div:nth-of-type(3) {
+        order: 5;
+        position: absolute;
+        top: 35%;
+        right: -15%;
+        width: clamp(225px, 40%, 375px);
+      }
+      p:first-of-type {
+        order: 6;
+        width: 70%;
+      }
+      div:nth-of-type(4) {
+        order: 8;
+        position: absolute;
+        width: clamp(225px, 40%, 375px);
+        bottom: -10%;
+        z-index: 100;
+        left: -10%;
+        transform: rotate(20deg);
+      }
+      p:last-of-type {
+        order: 7;
+        margin-bottom: 40%;
       }
     }
   }

@@ -5,7 +5,8 @@ export default function generateHeading() {
 
         node.forEach(node => {
             if (node) {
-                let content = node.textContent.trim().split(" ").map((word, i) => i === 2 || i === 3 ? `<span>${word}</span>` : word);
+                let content = node.textContent.trim().split(" ").map((word, i) => i === 1 || i === 2 ? `<span>${word}</span>` : word);
+                console.log(content);
                 node.innerHTML = content.join(" ")
             }
         })
