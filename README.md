@@ -14,6 +14,7 @@ Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria
 > 3. Experience Ilojo Bar
 > As a resident of Lagos, Nigerian, member of the diaspora or interested citizen of the world, I want to be able to get a virtual impression of the building so that I can see what it once was like. 
 
+
 ## Prototype
 ### Interaction
 **Home**
@@ -28,7 +29,13 @@ Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria
 
 ## Practical information
 ### Prismic
-❗
+We use Prismic as a headless CMS. A headless CMS is a content management system (CMS), only used for back-end purposes, built from the ground up to make content accessible and maintainable. Prismic is supported for lots of frameworks as Next.js & Vue.js, but is also be used with an express server or even just vanilla javascript. In our case, we use it in combination with an express server.
+
+We use Prismic to retrieve the stories and images from. The images are linked to the stories. This is the structure of all the stories:<br>
+<img width="25%" alt="Schermafbeelding 2022-06-21 om 10 19 50" src="https://user-images.githubusercontent.com/70577898/174751992-731f9d86-0526-4200-bbe8-f9d908554437.png">
+
+For more information how to use Prismic click [here](https://prismic.io/docs/technologies/express-overview_)
+
 ### Activity diagram
 ❗
 ### Used packages
