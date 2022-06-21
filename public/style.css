@@ -6,6 +6,7 @@
 @font-face {
   font-family: "Baloo";
   src: url(fonts/BalooBhai2-Regular.ttf);
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -282,7 +283,7 @@ footer {
   background-color: #FFFCDE;
   border-radius: 10px;
   margin-right: 1rem;
-  line-height: 1;
+  line-height: initial;
 }
 
 .menu li:last-child {
