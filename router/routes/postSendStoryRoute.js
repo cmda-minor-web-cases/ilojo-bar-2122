@@ -1,19 +1,19 @@
 import nodemailer from 'nodemailer'
+import multer from 'multer'
+
 import * as dotenv from "dotenv"
 import 'dotenv/config'
 
-import { multerUploads } from './multer.js'
+import { upload, storage, multerUploads } from './multer.js'
 
 const {
     MAIL_PW
   } = process.env
   dotenv.config()
 
-export const postSendStory = async (req, res) =>{   
+export const postSendStory = async (req, res, next) =>{   
     // uploaded files to images/uploads
-    multerUploads()
-
-    console.log(req.body)
+    multerUploads(req, res)
     
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -31,7 +31,10 @@ export const postSendStory = async (req, res) =>{
         from: req.body.mail, 
         to: 'ilojobar@gmail.com',
         subject: req.body.title, 
-        html: "<h4>Name:</h4>" + req.body.name + "<h4>E-mail:</h4>" + req.body.mail + "<h4>The title:</h4> " + req.body.title + "<h4>The story:</h4>" + req.body.story + "<h4>The attached files:</h4>" + req.body.file 
+        html: "<h4>Name:</h4>" + req.body.name + "<h4>E-mail:</h4>" + req.body.mail + "<h4>The title:</h4> " + req.body.title + "<h4>The story:</h4>" + req.body.story,
+      //   attachments: [
+      //     { filename: '1.png', path: './public/images/1.png' }
+      //  ]
     };
     
     transporter.sendMail(info, function(error){

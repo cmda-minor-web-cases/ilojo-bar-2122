@@ -4,13 +4,13 @@
 
    <p>You can write your own memories about the Ilojo bar in this book! </p>
       
-   <form method="POST" >
+   <form method="POST" enctype="multipart/form-data">
       <input type="text" name="name" id="name" placeholder="Name" required>
       <input type="email" name="mail" id="mail" placeholder="email@email.com" required>
        
       <input type="text" name="title" id="title" placeholder="Give your story a title" required>
       <textarea name="story" id="story"  rows="8" placeholder="Type your story here..." required></textarea>
-      <input type="file" name="File" id="file">
+      <input type="file" name="file" id="file" accept="image/png, image/jpeg, image/jpg" multiple>
 
       <input type="submit" value="Send story">
       <img src="../images/boek.png" alt="boek">

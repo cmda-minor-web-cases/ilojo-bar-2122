@@ -33,6 +33,10 @@ main ul li{
     margin: 0 2em;
 }
 
+main ul li div a{
+    text-decoration: none;
+}
+
 main ul li div{
     width: 100%;
     position: relative;
@@ -92,19 +96,22 @@ main > ul li:last-of-type{
     overflow: hidden;
 }
 
-main ul li:last-of-type a{
+main ul li:last-of-type div a{
     display: block;
 }
 
-main ul li:last-of-type img{
+main ul li:last-of-type a:last-of-type{
     height: 50%;
-    object-fit: contain;
     border: none;
-
     box-shadow: none;
 }
 
-main ul li:last-of-type img:first-of-type{
+main ul li:last-of-type a:last-of-type img{
+    height: 100%;
+    object-fit: contain;
+}
+
+main ul li:last-of-type > img:first-of-type{
     height: 25%;
     -webkit-filter: drop-shadow(2px 2px 5px var(--brown-color));
 }
