@@ -3,6 +3,7 @@
 main{
     position: relative;
     overflow-x: scroll;
+    max-width: fit-content;
 }
 
 main > a{

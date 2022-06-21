@@ -2,8 +2,9 @@
 
 main{
     width: 100%;
-    padding: 1em;
+    padding: 1em 1em 5em 1em;
     overflow: hidden;
+    height: 100%;
 }
 
 main a{
@@ -12,13 +13,18 @@ main a{
 
 main > p{
     margin: 0.5em 0 2em 0;
-    width: 85%;
+    width: 100%;
 }
 
 main form{
     position: relative;
     padding: 0 10% 0 1em;
-
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main form img {
@@ -60,3 +66,25 @@ main input[type='submit']{
     padding: 0.5em 1em;
     border-radius: 0.5em;
 }
+
+main input[type='file']{
+    border-bottom: none;
+}
+
+input[type='file']::file-selector-button{
+    border-radius: 0.5em;
+    border: 1px solid var(--brown-color);
+    background-color: transparent;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        overflow: visible;
+    }
+    main form {
+        height: 70%;
+        margin: 10vh auto;
+    }
+  }
