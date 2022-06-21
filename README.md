@@ -17,6 +17,8 @@ Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria
 Legacy has been formed with the object of gathering together committed men and women, Nigerians and non-Nigerians, united for the common cause of promoting and reserving the character and appearance of historic monuments and the environment and cultural entities in all parts of Nigeria. The aim of Legacy is to identify historical buildings, monuments and areas of the built environment which would be singled out for their contribution to the evolution, history and culture of Nigeria. 
 We were given this project by Femke van Zeijl, who works at the Historical and Environmental Group of Nigeria, Lagacy. She wrote her thesis on the Ilojo Bar which is one of the historical buidlings in Lagos, and she wanted to bring it back to life.
 
+![Legacy](./public/assets/legacy.png) 
+
 ## How does it work ❔
 
 Once you have opened the website, you are shown the beautiful Ilojo Building together with the environment. The sign welcomes you and it really feels as if you are there. Once you have clicked on the Ilojo Bar Building, you are being shown the inside of the building, the bar. While you are at the bar, the best person to tell you stories is ofcourse the barman. Take a look at the menu and let the barman indulge you in it's wonderful stories about the Ilojo Bar. 
