@@ -38,22 +38,40 @@ a {
   text-decoration: none;
 }
 
-footer img {
-  animation: none !important;
+.article-img.inview {
+  animation: inView 3s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+h2.inview,
+h4.inview {
+  animation: blur;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.inview {
-  animation: inView 2s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-fill-mode: backwards;
+h2.inview {
+  animation-duration: 3s;
+}
+h4.inview {
+  animation-duration: 2s;
 }
 
 @keyframes inView {
   0% {
-    transform: scale(0.1) rotate(10deg) translate(40%, 20%);
+    transform: scale(0.5) translate(40%, 10%) rotate(-10deg);
   }
   100% {
-    transform: scale(1) rotate(0deg) translate(0%, 0%);
+    transform: scale(1) translate(inherit) rotate(inherit);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px);
+    transform: translateY(20%);
+  }
+  100% {
+    filter: blur(inherit);
+    transform: translateY(0%);
   }
 }
 

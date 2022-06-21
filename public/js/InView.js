@@ -1,4 +1,4 @@
-let observedElements = document.querySelectorAll('img'); // Define the elements you want to intiate an action on
+let observedElements = document.querySelectorAll('.article-img, h2, h4'); // Define the elements you want to intiate an action on
 
 const options = { //define your options
     root: null, // Null = based on viewport
