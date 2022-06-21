@@ -38,6 +38,25 @@ a {
   text-decoration: none;
 }
 
+footer img {
+  animation: none !important;
+}
+
+.inview {
+  animation: inView 2s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes inView {
+  0% {
+    transform: scale(0.1) rotate(10deg) translate(40%, 20%);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0%, 0%);
+  }
+}
+
 h1,
 h2 {
   font-size: clamp(1.65rem, 3vw, 6rem);

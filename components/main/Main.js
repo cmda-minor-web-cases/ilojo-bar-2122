@@ -18,7 +18,7 @@ export default function Main() {
           {ctx.bodytext02.text !== '' ? <p>{ctx.bodytext02.text}</p> : ''}
           {ctx.images.map((image) => {
             return (
-              <div key={image.id}>
+              <div key={image.id} className='photo'>
                 <Image
                   src={image.url}
                   alt='foto'
