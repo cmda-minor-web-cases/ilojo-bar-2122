@@ -1,31 +1,53 @@
 # Ilojo Bar
-## Debrief
-### Background information
-Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria, which was illegally demolished in 2016. Ilojo Bar was designed and built by Africans returning from slavery in Brazil in the 1800s. Legacy would like an English-language website that becomes a kind of virtual monument of this special building and the many stories surrounding it.
+❗ Insert image here
+## About the project
+### The problem
+Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria, which was illegally demolished in 2016. Ilojo Bar was designed and built by Africans returning from slavery in Brazil in the 1800s. Legacy would like an English-language website that becomes a virtual monument of this special building and the many stories surrounding it.
 
-### Reason for the assignment
-In 2016, Ilojo bar was demolished while the building was a national monument. The building has had a lot of impact on Lagos and what the area is like today. It is important that these stories are told and that the people of Lagos do not forget the history of their city. That's why Legacy asked us to create a virtual monument.
-
-### Goal of the assignment
-The aim is to let as many people as possible know what impact Ilojo bar has had on Lagos. In this way, history can live on without the building still standing.
-
-### Target audience 
-The target audience is quite extensive. Legacy wants everyone to be able to view the history of Ilojo bar. But the focus of this project is on the Nigerians and the residents of Lagos.
-
-The people there, mainly reach the internet on their smartphones. It's not always that good though. So that is something we have to consider.
-
-For a more detailed explanation [click here](https://github.com/Sophievanderburg/ilojo-bar/wiki/Debrief)
-
-## The problem
-On September 11th 2016, bulldozers came and demolished the iconic national monument. The Ilojo bar or also called, Casa do Fernandez, Was designed and built by Africans who returned from slavery in Brazil in the 1800s. It was a national monument and should have been protected. Because the Ilojo bar has a lot of stories to tell and was a beautiful monument, legacy would like to create a virtual monument. To honor it and to let the stories life on, even though the building is gone. 
-
-<img width="300" alt="Screenshot 2022-06-07 at 13 35 05" src="https://user-images.githubusercontent.com/70900763/172369850-22e12c6d-dafc-4af5-ad43-7c841f01e3a4.png"> <img width="300" alt="Screenshot 2022-06-07 at 13 35 40" src="https://user-images.githubusercontent.com/70900763/172369968-40f08f1f-da88-45ad-bc4e-7df617c746a2.png">
-
+> User stories
+> 1. Read, listen and watch stories about Ilojo Bar
+> As a resident of Lagos, Nigerian, member of the Nigerian diaspora or interested world citizen, I want to be able to read, listen and see stories about  Ilojo Bar online so that I can learn more about the significance of the building for the metropolis of Lagos and of the cosmopolitan history of it, leading > from Spain to Brazil to Nigeria.
+>
+> 2. Add stories about Ilojo Bar
+> As an artist/visitor I want to be able to add a story about Ilojo Bar to the website, so that I can convey and complement the meaning of the building.
+> 
+> 3. Experience Ilojo Bar
+> As a resident of Lagos, Nigerian, member of the diaspora or interested citizen of the world, I want to be able to get a virtual impression of the building so that I can see what it once was like. 
 
 ## Prototype
-<img width="123" alt="Screenshot 2022-06-07 at 13 37 59" src="https://user-images.githubusercontent.com/70900763/172370351-408124f4-5a14-48f9-bfd2-7791690f50fa.png">
+### Interaction
+**Home**
+❗
+**View the paintings**
+❗
+**Read the stories**
+❗
+**Send a story**
+❗
 
 
-## API
+## Practical information
+### Prismic
+❗
+### Activity diagram
+❗
+### Used packages
+- [EJS](https://www.npmjs.com/package/ejs)
+- [express](https://www.npmjs.com/package/express)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [nodemailer](https://www.npmjs.com/package/nodemailer)
+- [@prismicio/client](npmjs.com/package/@prismicio/client)
+- [@prismicio/helpers](https://www.npmjs.com/package/@prismicio/helpers)
+- [node-dev](https://www.npmjs.com/package/node-dev)
+
+## How to install/use the code
+Install and use this repo in a view simple steps:
+1. Clone this repo with git clone ``https://github.com/Sophievanderburg/ilojo-bar.git``
+2. Install all the used packages with ``npm install``
+3. Start the server with ``npm run dev``
+4. Open http://localhost:2020/ in your favourite browser
+Good luck! 🍀
+
 
 
