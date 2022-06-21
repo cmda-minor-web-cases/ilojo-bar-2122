@@ -6,9 +6,8 @@ import { renderStory } from './routes/storyRoute.js'
 import { renderHome } from './routes/homeRoute.js'
 
 import { renderSendStory  } from './routes/sendStoryRoute.js'
-import { upload } from './routes/multer.js'
 
-import { postSendStory } from './routes/postSendStoryRoute.js'
+import { postSendStory, upload } from './routes/postSendStoryRoute.js'
 
 import { renderOffline } from './routes/offlineRoute.js'
 import { renderLoadingstate } from './routes/loadingstateroute.js'

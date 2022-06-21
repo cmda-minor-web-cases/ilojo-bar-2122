@@ -4,19 +4,14 @@ import multer from 'multer'
 import * as dotenv from "dotenv"
 import 'dotenv/config'
 
-import { upload,  multerUploads } from './multer.js'
-
+export const upload = multer({ dest: "public/images/uploads/" });
 const {
     MAIL_PW
   } = process.env
   dotenv.config()
 
 export const postSendStory = async (req, res, next) =>{   
-    // uploaded files to images/uploads
-    multerUploads(req, res)
-    
     const images = req.files
-
     const attachments = images.map((image)=>{
         return { filename: image.originalname, path: image.destination + image.filename };
     })
