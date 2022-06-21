@@ -6,7 +6,7 @@
   * [Description](#description-👩🏻‍💻)
   * [The Client](#the-client-🤝🏻)
   * [How does it work](#how-does-it-work-❔)
-  * [Design challenge](#design-challege-🖌)
+  * [Design challenge](#design-challenge-🖌)
   * [Licence](#licence-⚠)
 
 ## Description 👩🏻‍💻
