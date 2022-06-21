@@ -19,6 +19,7 @@ export default function Home({ stories }) {
         <Script src='/js/generateHeading.js' />
         <Script src='/js/ScrollJacking.js' />
         <Script src='/js/InView.js' />
+        <Script src='/js/karaoke.js' />
       </div>
     </Context.Provider>
   );

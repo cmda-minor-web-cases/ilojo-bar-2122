@@ -155,3 +155,16 @@ h4::before {
   background-color: #2f2f2f;
   transform: translateY(-3px);
 }
+
+.karaoke {
+  display: inline-block;
+  opacity: 0;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.read {
+  opacity: 1;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
