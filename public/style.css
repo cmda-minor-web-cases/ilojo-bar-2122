@@ -72,12 +72,12 @@ body {
   animation: lift 3s infinite;
 }
 
-main section:first-child a:hover img {
+.home-page main section:first-child a:hover img {
   filter: drop-shadow(0 0 0.75rem #56392b50);
   animation: lift paused;
 }
 
-main section:first-child a:focus img {
+.home-page main section:first-child a:focus img {
   filter: drop-shadow(0 0 0.75rem #56392b80);
 }
 
@@ -170,7 +170,7 @@ main section:nth-child(2) {
   line-height: 1;
 }
 
-main section:nth-child(2) img:first-of-type {
+.home-page main section:nth-child(2) img:first-of-type {
   width: 70%;
 }
 
@@ -259,44 +259,40 @@ main section:nth-child(2) img:first-of-type {
 
 /* Stories menu */
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 .menu {
   width: 50vw;
   height: 250px;
-  position: absolute;
-  bottom: 50;
-  right: 0;
   background-color: #EBE2C2;
   border-radius: 21px;
-  display: grid; 
   padding: 1em;
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-  gap: .5rem;
-  grid-template-areas: 'titel-1 titel-2' "titel-3 titel-4" "titel-5 titel-6" "titel-7 titel-8" "titel-9 titel-9";
+  z-index: 3;
+  overflow-x: scroll;
   list-style: none;
+  display: flex;
 }
 
 .menu li {
-  width: 100%;
+  min-width: 100%;
+  height: 100%;
   background-color: #FFFCDE;
   border-radius: 10px;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+.menu li:last-child {
+  margin: 0;
 }
 
 .menu a {
   color: #2d2209;
   text-decoration: none;
 }
-
-.titel-1 { grid-area: titel-1; }
-.titel-2 { grid-area: titel-2; }
-.titel-3 { grid-area: titel-3; }
-.titel-4 { grid-area: titel-4; }
-.titel-5 { grid-area: titel-5; }
-.titel-6 { grid-area: titel-6; }
-.titel-7 { grid-area: titel-7; }
-.titel-8 { grid-area: titel-8; }
-.titel-9 { grid-area: titel-9; }
 
 footer img {
   display: none;

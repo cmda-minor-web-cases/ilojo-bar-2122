@@ -1,39 +1,40 @@
 <%- include('./partials/head') %>
 
 <body class="bar-page">
-    <header>
-      <a href="/" class="back">
-        <img src="img/back-button.svg" alt="back arrow" />
-      </a>
-      <!-- <img src="img/wood-sign.svg" alt="wooden ilojo bar sign attached to ropes" class="wood-sign" /> -->
-      <h1>ILOJO BAR</h1>
-    </header>
-    <main>
-      <ul class="bar-area">
-        <li>
-          <img src="img/lamps.svg" alt="Lamps on top of the bar" class="lamps" />
-        </li>
-        <li>
-          <img src="img/Union.svg" alt="text bubble" class="bubble" />
-        </li>
-        <li>
-          <img src="img/barman.svg" alt="Barman" class="man" />
-        </li>
-        <li>
-          <img src="img/bar.png" alt="Bar with drinks" class="bar" />
-        </li>
-        <li>
-          <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <ol class="menu">
-        <% stories.forEach(story => { %>
-        <% let storyTitle = story.title.split(' ').join('_').toLowerCase() %>
-        <li><a class="titel-<%= story.uid %>" href="/<%= storyTitle %>"><%- story.title %></a></li>
-        <% }) %>
-        <img src="img/hands.svg" alt="hands that hold the menu" />
-    </footer>
+  <header>
+    <a href="/" class="back">
+      <img src="img/back-button.svg" alt="back arrow" />
+    </a>
+    <!-- <img src="img/wood-sign.svg" alt="wooden ilojo bar sign attached to ropes" class="wood-sign" /> -->
+    <h1>ILOJO BAR</h1>
+  </header>
+  <main>
+    <ul class="bar-area">
+      <li>
+        <img src="img/lamps.svg" alt="Lamps on top of the bar" class="lamps" />
+      </li>
+      <li>
+        <img src="img/Union.svg" alt="text bubble" class="bubble" />
+      </li>
+      <li>
+        <img src="img/barman.svg" alt="Barman" class="man" />
+      </li>
+      <li>
+        <img src="img/bar.png" alt="Bar with drinks" class="bar" />
+      </li>
+      <li>
+        <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <ol class="menu">
+      <% stories.forEach(story => { %>
+      <% let storyTitle = story.title.split(' ').join('_').toLowerCase() %>
+      <li><a href="/<%= storyTitle %>"><h2><%- story.title %></h2></a></li>
+      <% }) %>
+    </ol>
+    <img src="img/hands.svg" alt="hands that hold the menu" />
+  </footer>
 
-    <%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>
