@@ -86,6 +86,8 @@ h4 {
 p {
   font-size: clamp(0.8rem, 1vw, 2rem);
   font-family: Helvetica-Regular;
+  font-size: 1em;
+  line-height: 1.6em;
   color: #333333;
 }
 
@@ -126,7 +128,7 @@ footer {
 
 .karaoke { 
   display: inline-block;
-  opacity: 0;
+  opacity: 0.3;
   transition: .5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -135,4 +137,5 @@ footer {
   opacity: 1;
   transition: .5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(0px);
 }

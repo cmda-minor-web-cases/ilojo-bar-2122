@@ -50,7 +50,6 @@ export async function getAllStories(section) {
     console.log(result);
     header = result.node
   })
-  console.log(section);
 
   const sections = {blocks, header}
   return sections
