@@ -6,17 +6,19 @@
       display: flex;
       flex-direction: column;
 
-      h4 { 
+      h4 {
         order: 2;
         margin-top: 1em;
-        margin-bottom: 0
+        margin-bottom: 0;
       }
-      h2 { order: 3}
-      p:first-of-type { 
+      h2 {
+        order: 3;
+      }
+      p:first-of-type {
         order: 4;
         margin-bottom: 110%;
       }
-      div:first-of-type { 
+      div:first-of-type {
         order: 1;
         position: absolute;
         width: clamp(225px, 40%, 375px);
@@ -24,9 +26,8 @@
         right: 0%;
         z-index: 100;
         transform: rotate(-15deg);
-        transform-origin: -50% -50%;
       }
-      div:nth-of-type(6) { 
+      div:nth-of-type(6) {
         order: 5;
         position: absolute;
         top: 43%;
@@ -35,7 +36,7 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-25deg);
       }
-      div:nth-of-type(3) { 
+      div:nth-of-type(3) {
         order: 6;
         position: absolute;
         top: 48%;
@@ -44,7 +45,7 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(25deg);
       }
-      div:nth-of-type(5) { 
+      div:nth-of-type(5) {
         order: 7;
         position: absolute;
         top: 53%;
@@ -53,7 +54,7 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(10deg);
       }
-      div:nth-of-type(4) { 
+      div:nth-of-type(4) {
         order: 8;
         position: absolute;
         top: 55%;
@@ -62,7 +63,7 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-10deg);
       }
-      div:nth-of-type(2) { 
+      div:nth-of-type(2) {
         order: 9;
         position: absolute;
         top: 50%;
@@ -71,11 +72,10 @@
         width: clamp(225px, 40%, 375px);
         transform: rotate(-10deg) translateX(50%);
       }
-      p:last-of-type { 
+      p:last-of-type {
         order: 10;
         margin-bottom: 134px;
       }
-
     }
   }
 }

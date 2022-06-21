@@ -1,11 +1,15 @@
-import { GraphQLClient, gql } from "graphql-request";
+import {
+  GraphQLClient,
+  gql
+} from "graphql-request";
 const graphcms = new GraphQLClient(process.env.GRAPHCMS_ENDPOINT);
 let mains;
 let blocks;
 let header
+let footer;
 
 export async function getAllStories(section) {
-  const query = gql`
+  const query = gql `
     {
       mains {
         blocks {
@@ -38,6 +42,17 @@ export async function getAllStories(section) {
           }
         }
       }
+      footersConnection {
+        edges {
+          node {
+            title
+            image {
+              url
+              id
+            }
+          }
+        }
+      }
     }
   `;
 
@@ -47,11 +62,17 @@ export async function getAllStories(section) {
     blocks = item.blocks;
   });
   results.headersConnection.edges.forEach(result => {
-    console.log(result);
     header = result.node
   })
+  results.footersConnection.edges.forEach(result => {
+    footer = result.node
+    console.log(footer);
+  })
 
-  const sections = {blocks, header}
+  const sections = {
+    blocks,
+    header,
+    footer
+  }
   return sections
 }
-

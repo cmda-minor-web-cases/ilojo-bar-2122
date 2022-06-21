@@ -8,7 +8,7 @@
       flex-direction: column;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: -57vh;
         left: 0;
@@ -21,7 +21,7 @@
         transform: scaleY(-1);
       }
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -57vh;
         left: 0;

@@ -7,18 +7,18 @@ import { Context } from '../../context/state';
 
 export default function Main() {
   const [context] = useContext(Context);
-  const stories = context.blocks
+  const stories = context.blocks;
   return (
     <main className={styles.main}>
       {stories.map((ctx, i) => (
         <article key={i}>
-          {(ctx.subtitle !== null) ? <h4>{ctx.subtitle}</h4> : ''}
+          {ctx.subtitle !== null ? <h4>{ctx.subtitle}</h4> : ''}
           <h2>{ctx.title}</h2>
-          {(ctx.bodytext01.text !== '') ? <p>{ctx.bodytext01.text}</p> : ''}
-          {(ctx.bodytext02.text !== '') ? <p>{ctx.bodytext02.text}</p> : ''}
+          {ctx.bodytext01.text !== '' ? <p>{ctx.bodytext01.text}</p> : ''}
+          {ctx.bodytext02.text !== '' ? <p>{ctx.bodytext02.text}</p> : ''}
           {ctx.images.map((image) => {
             return (
-              <div key={image.id}>
+              <div key={image.id} className='article-img'>
                 <Image
                   src={image.url}
                   alt='foto'

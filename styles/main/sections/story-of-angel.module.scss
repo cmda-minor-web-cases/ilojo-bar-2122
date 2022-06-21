@@ -8,7 +8,7 @@
       flex-direction: column;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -57vh;
         left: 0;
@@ -49,7 +49,7 @@
         width: 70%;
       }
       div:nth-of-type(3) {
-        order: 5  ;
+        order: 5;
         position: absolute;
         top: 35%;
         right: -15%;
@@ -72,7 +72,6 @@
         order: 7;
         margin-bottom: 40%;
       }
-      
     }
   }
 }

@@ -38,6 +38,43 @@ a {
   text-decoration: none;
 }
 
+.article-img.inview {
+  animation: inView 3s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+h2.inview,
+h4.inview {
+  animation: blur;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h2.inview {
+  animation-duration: 3s;
+}
+h4.inview {
+  animation-duration: 2s;
+}
+
+@keyframes inView {
+  0% {
+    transform: scale(0.5) translate(40%, 10%) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) translate(inherit) rotate(inherit);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px);
+    transform: translateY(20%);
+  }
+  100% {
+    filter: blur(inherit);
+    transform: translateY(0%);
+  }
+}
+
 h1,
 h2 {
   font-size: clamp(1.65rem, 3vw, 6rem);
@@ -51,20 +88,20 @@ h2 {
 }
 
 .grain::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: .04;
+  opacity: 0.04;
   z-index: 100;
   pointer-events: none;
-  background-image: url("../public/images/home/grain.gif");
+  background-image: url('../public/images/home/grain.gif');
 }
 
 .grain::after {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   bottom: 0;
@@ -98,7 +135,7 @@ footer {
   width: 100%;
 }
 
-main article:not(article:nth-child(3), article:nth-child(7)) {
+main article:not(article:nth-child(2), article:nth-child(5)) {
   padding-top: 134px;
 }
 
@@ -121,21 +158,15 @@ h4::before {
   transform: translateY(-3px);
 }
 
-footer {
-  // Footer heeft twee achtergrond kleuren. Moeten nog ff kijken hoe we dat doen. #898266
-  background-color: #342e20;
-}
-
-.karaoke { 
+.karaoke {
   display: inline-block;
-  opacity: 0.3;
-  transition: .5s;
+  opacity: 0;
+  transition: 0.5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .read {
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: translateY(0px);
 }

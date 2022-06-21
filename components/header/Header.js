@@ -9,19 +9,22 @@ import architectSide from '../../public/images/home/home-photo-02.png';
 import oldBuilding from '../../public/images/home/home-photo-03.png';
 import newBuilding from '../../public/images/home/home-photo-04.png';
 
-// Context 
+// Context
 import React, { useContext } from 'react';
 import { Context } from '../../context/state';
 
 export default function Header() {
   const [context] = useContext(Context);
-  const headerContent = context.header
+  const headerContent = context.header;
   console.log(headerContent.image[0].url);
   return (
     <header className={styles.header}>
       {/*Top images*/}
       <div>
-        <div className={`border ${styles.image}`} key={headerContent.image[1].id}>
+        <div
+          className={`border ${styles.image}`}
+          key={headerContent.image[1].id}
+        >
           <Image
             src={headerContent.image[1].url}
             alt='foto'
@@ -29,9 +32,12 @@ export default function Header() {
             width='100%'
             height='100%'
             objectFit='cover'
-            />
+          />
         </div>
-        <div className={`border ${styles.image}`} key={headerContent.image[0].id}>
+        <div
+          className={`border ${styles.image}`}
+          key={headerContent.image[0].id}
+        >
           <Image
             src={headerContent.image[0].url}
             alt='foto'
@@ -39,7 +45,7 @@ export default function Header() {
             width='100%'
             height='100%'
             objectFit='cover'
-            />
+          />
         </div>
       </div>
       <h1>{headerContent.heading}</h1>
@@ -52,7 +58,7 @@ export default function Header() {
           width='100%'
           height='100%'
           objectFit='cover'
-          />
+        />
       </div>
       <div className={`border ${styles.image}`} key={headerContent.image[3].id}>
         <Image
@@ -62,7 +68,7 @@ export default function Header() {
           width='100%'
           height='100%'
           objectFit='cover'
-          />
+        />
       </div>
     </header>
   );
