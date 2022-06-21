@@ -20,7 +20,7 @@ app.use((req, res, next) => {
         prismicH,
     }
     next();
-}); 
+});
 
 app.get('/', (req, res) => {
     res.render('index');
