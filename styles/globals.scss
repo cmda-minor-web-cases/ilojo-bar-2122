@@ -123,3 +123,16 @@ footer {
   // Footer heeft twee achtergrond kleuren. Moeten nog ff kijken hoe we dat doen. #898266
   background-color: #342e20;
 }
+
+.karaoke { 
+  display: inline-block;
+  opacity: 0;
+  transition: .5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.read {
+  opacity: 1;
+  transition: .5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
