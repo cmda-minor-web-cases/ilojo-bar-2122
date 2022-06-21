@@ -32,7 +32,8 @@ Ilojo Bar or Casa do Fernandez was an iconic national monument in Lagos, Nigeria
 We use Prismic as a headless CMS. A headless CMS is a content management system (CMS), only used for back-end purposes, built from the ground up to make content accessible and maintainable. Prismic is supported for lots of frameworks as Next.js & Vue.js, but is also be used with an express server or even just vanilla javascript. In our case, we use it in combination with an express server.
 
 We use Prismic to retrieve the stories and images from. The images are linked to the stories. This is the structure of all the stories:<br>
-<img width="25%" alt="Schermafbeelding 2022-06-21 om 10 19 50" src="https://user-images.githubusercontent.com/70577898/174751992-731f9d86-0526-4200-bbe8-f9d908554437.png">
+<img width="25%" alt="Schermafbeelding 2022-06-21 om 10 22 38" src="https://user-images.githubusercontent.com/70577898/174752624-5f87c7b2-fe26-4337-a1e7-78454f60feec.png">
+
 
 For more information how to use Prismic click [here](https://prismic.io/docs/technologies/express-overview_)
 
