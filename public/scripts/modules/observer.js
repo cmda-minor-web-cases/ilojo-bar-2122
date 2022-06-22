@@ -1,12 +1,11 @@
-//Intersection Observer experiment
-const observer = new IntersectionObserver(showArticles); // er wordt intersection object aangemaakt
-const elements = document.querySelectorAll('main p, main > img');
+const observer = new IntersectionObserver(showText); 
+const paragraphs = document.querySelectorAll('main p');
 
-elements.forEach(element => {
+paragraphs.forEach(element => {
   observer.observe(element) 
 });
 
-export function showArticles(entries, observer) { 
+export function showText(entries, observer) { 
   entries.forEach(entry => {
     const targetClass = entry.target.classList;
     if(entry.isIntersecting) {
@@ -17,3 +16,4 @@ export function showArticles(entries, observer) {
   });
 };
 
+// source: https://codepen.io/joostf/pen/qJmWzb 
