@@ -3,7 +3,7 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Context } from '../context/state';
 import React, { useState } from 'react';
-import { getAllStories } from './lib/api.js';
+import { getAllStories } from '../lib/api';
 import Script from 'next/script';
 
 export default function Home({ stories }) {
