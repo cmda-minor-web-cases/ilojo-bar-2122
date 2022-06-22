@@ -13,7 +13,7 @@
         <img src="img/lamps.svg" alt="Lamps on top of the bar" class="lamps" />
       </li>
       <li>
-        <img src="img/Union.svg" alt="text bubble" class="bubble" />
+        <p>Wanna hear a story? Choose a story on your menu!</p>
       </li>
       <li>
         <img src="img/barman.svg" alt="Barman" class="man" />
@@ -28,9 +28,17 @@
   </main>
   <footer>
     <ol class="menu">
+      <li>
+        <legend>Swipe to discover!</legend>
+        <img src="img/swipe.png" alt="swipe icon">
+      </li>
       <% stories.forEach(story => { %>
       <% let storyTitle = story.title.split(' ').join('_').toLowerCase() %>
-      <li><a href="/<%= storyTitle %>"><h2><%- story.title %></h2></a></li>
+      <li>
+        <img src="<%= story.img %>" alt="<%= storyTitle %>">
+        <a href="/<%= storyTitle %>"><h2><%- story.title %></h2></a>
+        <a href="/<%= storyTitle %>">Discover</a>
+      </li>
       <% }) %>
     </ol>
     <img src="img/hands.svg" alt="hands that hold the menu" />
