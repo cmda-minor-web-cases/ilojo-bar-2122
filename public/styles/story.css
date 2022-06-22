@@ -20,29 +20,6 @@ main > a{
     text-decoration: none;
 }
 
-main img{
-    max-width: 500px;
-}
-
-main > div{
-    max-width: 100%;
-    position: relative;
-    margin-top: 30px;
-    transform: rotate(2deg);
-}
-
-main > div::before{
-    content: ' ';
-    background-image: url(../images/hanger.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 30px;
-    position: absolute;
-    left: calc(50% - 35px);
-    top: -30px;
-}
-
 main p, main > img {
     opacity: 0;
     transform:scale(0.75) rotate(-10deg);
@@ -55,23 +32,13 @@ p.observed {
     transform:scale(1) rotate(0);
 }
 
-main div:empty::before{
-    display:none;
-}
-
-main div img{
-    width: 100%;
-    object-fit: contain;
-    border: 0.4em solid var(--brown-color);
-    box-shadow: 2px 2px 10px var(--brown-color);
+/* paragraphs */
+p::first-letter { 
+    font-size: 200%;
 }
 
 main p:nth-of-type(1)  {
     order: 1;
-}
-
-main div:nth-of-type(4) {
-    order:2;
 }
 
 main p:nth-of-type(2)  {
@@ -95,11 +62,6 @@ main p:nth-of-type(4)  {
 
 main p:nth-of-type(5)  {
     order: 7;
-    
-}
-
-main div:nth-of-type(3)  {
-    order: 8;
 }
 
 main p:nth-of-type(6)  {
@@ -110,6 +72,42 @@ main p:nth-of-type(7)  {
     order: 10; 
 }
 
+main p:nth-of-type(8)  {
+    order: 12; 
+}
+
+
+/* images */
+main > div{
+    max-width: 500px;
+    position: relative;
+    margin-top: 30px;
+    transform: rotate(2deg);
+}
+
+main > div::before{
+    content: ' ';
+    background-image: url(../images/hanger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 35px);
+    top: -30px;
+}
+
+main div img{
+    width: 100%;
+    object-fit: contain;
+    border: 0.4em solid var(--brown-color);
+    box-shadow: 2px 2px 10px var(--brown-color);
+}
+
+main div:empty{
+    display: none;
+}
+
 main div:nth-of-type(2)  {
     order: 4;
     width: 40%;
@@ -117,14 +115,25 @@ main div:nth-of-type(2)  {
     justify-self: end;
 }
 
-main p:nth-of-type(8)  {
-    order: 12; 
+main div:nth-of-type(3)  {
+    order: 8;
+}
+
+main div:nth-of-type(4) {
+    order:2;
 }
 
 main div:nth-of-type(5)  {
     order: 13;
 }
 
-p::first-letter { 
-    font-size: 200%;
+main div:nth-of-type(6)  {
+    order: 4;
+    width: 40%;
+    align-self:end;
+    justify-self: start ;
+}
+
+main div:nth-of-type(7){
+    display: none;
 }
