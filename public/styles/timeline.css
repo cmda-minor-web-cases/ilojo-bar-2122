@@ -5,7 +5,6 @@ main{
     overflow-x: scroll;
     max-width: fit-content;
     scroll-snap-type: x mandatory;
-
 }
 
 main > a{
