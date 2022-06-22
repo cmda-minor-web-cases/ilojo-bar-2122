@@ -15,40 +15,59 @@ import { Context } from '../../context/state';
 
 export default function Header() {
   const [context] = useContext(Context);
-  const stories = context.header;
+  const headerContent = context.header;
+  console.log(headerContent.image[0].url);
   return (
     <header className={styles.header}>
       {/*Top images*/}
       <div>
-        <div className={`border ${styles.image}`}>
+        <div
+          className={`border ${styles.image}`}
+          key={headerContent.image[1].id}
+        >
           <Image
-            alt='Ilojo bar top view'
-            src={architectTop}
+            src={headerContent.image[1].url}
+            alt='foto'
             layout='responsive'
+            width='100%'
+            height='100%'
+            objectFit='cover'
           />
         </div>
-        <div className={`border ${styles.image}`}>
+        <div
+          className={`border ${styles.image}`}
+          key={headerContent.image[0].id}
+        >
           <Image
-            alt='Ilojo bar side view'
-            src={architectSide}
+            src={headerContent.image[0].url}
+            alt='foto'
             layout='responsive'
+            width='100%'
+            height='100%'
+            objectFit='cover'
           />
         </div>
       </div>
-      <h1>Telling the stories of Ilojo Bar</h1>
+      <h1>{headerContent.heading}</h1>
       {/*Bottom images*/}
-      <div className={`border ${styles.image}`}>
+      <div className={`border ${styles.image}`} key={headerContent.image[2].id}>
         <Image
-          alt='The ilojo in 20th century'
-          src={newBuilding}
+          src={headerContent.image[2].url}
+          alt='foto'
           layout='responsive'
+          width='100%'
+          height='100%'
+          objectFit='cover'
         />
       </div>
-      <div className={`border ${styles.image}`}>
+      <div className={`border ${styles.image}`} key={headerContent.image[3].id}>
         <Image
-          alt='The ilojo bar in 19th century'
-          src={oldBuilding}
+          src={headerContent.image[3].url}
+          alt='foto'
           layout='responsive'
+          width='100%'
+          height='100%'
+          objectFit='cover'
         />
       </div>
     </header>

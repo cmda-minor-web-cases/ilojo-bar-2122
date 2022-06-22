@@ -13,6 +13,7 @@
       }
       h2 {
         order: 3;
+        width: 80%;
       }
       p:first-of-type {
         order: 4;
@@ -21,12 +22,11 @@
       div:first-of-type {
         order: 1;
         position: absolute;
-        width: clamp(225px, 40%, 375px);
-        top: 2%;
-        right: 0%;
+        width: clamp(175px,35%, 300px);
+        top: 0%;
+        right: -10%;
         z-index: 100;
         transform: rotate(-15deg);
-        transform-origin: -50% -50%;
       }
       div:nth-of-type(6) {
         order: 5;

@@ -25,48 +25,45 @@
       div {
         &:nth-of-type(1) {
           position: absolute;
-          bottom: 32.5%;
+          bottom: 47.5%;
           left: -15%;
           z-index: 4;
           width: clamp(230px, 40%, 375px);
-          transform: translate(0%, -50%) rotate(3deg);
+          transform: rotate(3deg);
           order: 5;
           filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.1));
         }
         &:nth-of-type(2) {
           position: absolute;
-          bottom: 32.5%;
+          bottom: 47.5%;
           left: -15%;
           z-index: 3;
           width: clamp(230px, 40%, 375px);
-          transform: translate(0%, -50%) rotate(20deg);
+          transform: rotate(20deg);
           order: 6;
           filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.1));
         }
         &:nth-of-type(3) {
           position: absolute;
-          bottom: 32.5%;
+          bottom: 47.5%;
           left: -15%;
           z-index: 2;
           width: clamp(240px, 40%, 375px);
-          transform: translate(0%, -50%) rotate(5deg);
+          transform: rotate(5deg);
           order: 7;
           filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.1));
         }
         &:nth-of-type(4) {
-          position: relative;
           order: 4;
-          top: 0;
-          right: -20%;
-          z-index: 1;
           width: clamp(375px, 40%, 400px);
-          transform: translate(0%, -20%) rotate(-5deg);
+          transform: translate(10%, -25%) rotate(-5deg);
+          margin-bottom: 5%;
         }
         &:nth-of-type(5) {
           order: 9;
           position: relative;
-          right: -10%;
-          padding-bottom: 5rem;
+          transform: translate(10%, 0%);
+          margin-bottom: 134px;
         }
       }
     }

@@ -16,11 +16,12 @@
       p {
         &:nth-of-type(1) {
           order: 4;
-          padding-bottom: 15rem;
+          margin-bottom: 50px;
         }
         &:nth-of-type(2) {
-          order: 8;
-          padding-top: 15rem;
+          order: 9;
+          margin-bottom: 134px;
+          margin-top: 50px;
         }
       }
       div {
@@ -29,39 +30,39 @@
         }
         &:nth-of-type(2) {
           position: absolute;
-          bottom: 6%;
-          left: 45%;
+          bottom: 17.5%;
+          left: 10%;
           z-index: 2;
-          transform: translate(-50%, -50%) rotate(8deg);
-          width: clamp(250px, 40%, 400px);
-          order: 5;
+          transform: rotate(8deg);
+          width: clamp(300px, 40%, 400px);
+          order: 6;
         }
         &:nth-of-type(3) {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
           z-index: 1;
-          transform: translate(-50%, -50%) rotate(3deg);
+          position: relative;
+          top: -50%;
+          left: 50%;
+          transform: translate(-50%, -25%) rotate(3deg);
           width: clamp(500px, 40%, 600px);
           order: 5;
         }
         &:nth-of-type(4) {
           position: absolute;
-          bottom: 15%;
+          bottom: 25%;
           left: -20%;
           z-index: 3;
-          transform: translate(0, -50%) rotate(-8deg);
-          width: clamp(230px, 40%, 375px);
-          order: 5;
+          transform: rotate(-8deg);
+          width: clamp(250px, 40%, 375px);
+          order: 7;
         }
         &:nth-of-type(5) {
           position: absolute;
-          bottom: 10%;
-          right: -20%;
+          bottom: 27.5%;
+          right: -10%;
           z-index: 3;
-          transform: translate(0, -50%) rotate(-3deg);
+          transform: rotate(-3deg);
           width: clamp(230px, 40%, 375px);
-          order: 5;
+          order: 8;
         }
       }
       &::before {
@@ -79,7 +80,7 @@
       &::after {
         content: '';
         position: absolute;
-        bottom: -57vh;
+        bottom: -50vh;
         left: 0;
         background-image: url(../../../public/images/paper-effects/paper-returnees-bottom.svg);
         background-position: center;
@@ -87,6 +88,7 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
+        z-index: -1;
       }
     }
   }

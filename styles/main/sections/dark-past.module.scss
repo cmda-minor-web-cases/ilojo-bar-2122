@@ -55,8 +55,8 @@
       div:first-of-type {
         order: 3;
         position: absolute;
-        top: 0px;
-        right: 0%;
+        top: -5%;
+        right: -10%;
         width: clamp(200px, 35%, 350px);
         z-index: 101;
         transform: rotate(8deg);
@@ -71,12 +71,10 @@
         width: clamp(200px, 35%, 350px);
         transform: rotate(-4deg) translate(100px, 0px);
         margin: 0;
-        position: absolute;
-        top: 45%;
       }
       p:last-of-type {
         order: 6;
-        margin-top: 55%;
+        margin-top: 5%;
         margin-bottom: 20%;
       }
     }
