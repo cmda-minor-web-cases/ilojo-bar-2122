@@ -48,6 +48,7 @@ For more information how to use Prismic click [here](https://prismic.io/docs/tec
 - [@prismicio/client](npmjs.com/package/@prismicio/client)
 - [@prismicio/helpers](https://www.npmjs.com/package/@prismicio/helpers)
 - [node-dev](https://www.npmjs.com/package/node-dev)
+- [multer](https://www.npmjs.com/package/multer)
 
 ## How to install/use the code
 Install and use this repo in a view simple steps:
