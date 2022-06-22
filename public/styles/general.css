@@ -1,0 +1,51 @@
+:root {
+    --beige-color: #EFE8E0;
+    --dark-beige-color: #CFBCA6;
+    --brown-color: #544338;
+}
+
+h1, h2, h3{
+    font-family: scotch-display, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, button, a, input, textarea, placeholder, ::before, ::after, ::file-selector-button{
+    font-family: scotch-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: var(--brown-color);
+}
+
+body{
+    background-color: var(--beige-color);
+}
+
+header{
+    height: 7.5vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header h1 a{
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    height: 92.5vh;
+    max-width: 900px;
+    margin: 0 auto;
+}

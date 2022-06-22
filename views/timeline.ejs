@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+    <a href="/">Back to home</a>
+    <ul>
+        <% allStories.forEach( (item, i) => { %>
+            <li>
+                <h3><%- item.data.year[0].text %></h3>
+                <div>
+                    <img src="<%- item.data.image1.url %>" alt="" width="100%">
+                </div>
+                <a href="/timeline/<%- item.uid %>">Read the story ></a>
+            </li>
+        <% }) %>
+        
+        <li>
+            <img src="/images/clock.png" alt="clock">
+            <div>
+                <a href="/send">Write your own story</a>
+                <a href="/send">></a>   
+            </div>
+            <a href="/send"><img src="/images/boek-standaard.png" alt="book"></a>
+        </li>
+    </ul>
+    
+
+    <!-- floor -->
+    <div></div>
+</main>
+<%- include('partials/foot.ejs') %>

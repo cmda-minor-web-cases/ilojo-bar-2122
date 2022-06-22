@@ -1,0 +1,101 @@
+@import url(general.css);
+
+main{
+    width: 100%;
+    padding: 1em 1em 5em 1em;
+    overflow: hidden;
+    height: 100%;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main > p{
+    margin: 0.5em 0 2em 0;
+    width: 100%;
+}
+
+main form{
+    position: relative;
+    padding: 0 10% 0 1em;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main form img {
+    position:absolute;
+    width: 220%;
+    height: 130%;
+    top: -12%;
+    left: -110%;
+    z-index:-1;
+}
+
+main form input{
+    width: 100%;
+    padding: 0.25em 1em;
+    border: none;
+    border-bottom: 1px solid var(--brown-color);
+    display: block;
+    margin: 0.5em 0;
+    background-color: transparent;
+}
+
+main textarea{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid var(--brown-color);
+    display: block;
+    margin: 0.5em 0;
+    background-color: transparent;
+}
+
+
+
+main form img {
+    position:relative;
+    width: 220%;
+    height: 130%;
+    top: -12%;
+    left: -110%;
+    z-index:-1;
+}
+
+main input[type='submit']{
+    display: block;
+    color: var(--beige-color);
+    background-color: var(--brown-color);
+    height: auto;
+    width: auto;
+    margin: 0.5em auto 1em auto;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+main input[type='file']{
+    border-bottom: none;
+}
+
+input[type='file']::file-selector-button{
+    border-radius: 0.5em;
+    border: 1px solid var(--brown-color);
+    background-color: transparent;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        overflow: visible;
+    }
+    main form {
+        height: 70%;
+        margin: 10vh auto;
+    }
+  }
