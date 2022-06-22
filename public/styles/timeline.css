@@ -4,6 +4,8 @@ main{
     position: relative;
     overflow-x: scroll;
     max-width: fit-content;
+    scroll-snap-type: x mandatory;
+
 }
 
 main > a{
@@ -32,6 +34,7 @@ main ul li{
     max-width: 350px;
     display: block;
     margin: 0 2em;
+    scroll-snap-align: center;
 }
 
 main ul li div a{
