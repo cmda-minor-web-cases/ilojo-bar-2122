@@ -31,6 +31,7 @@ main p, main > img {
     transform-origin:0 0;
 }
 
+
 p.observed {
     opacity: 1;
     transform:scale(1) rotate(0);
@@ -80,13 +81,24 @@ main p:nth-of-type(8)  {
     order: 12; 
 }
 
+main div:nth-of-type(1n){
+    transform: rotate(4deg);
+}
+
+main div:nth-of-type(2n){
+    transform: rotate(-2deg);
+}
+
+main div:nth-of-type(3n){
+    transform: rotate(-4deg);
+}
 
 /* images */
 main > div{
     max-width: 500px;
     position: relative;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     transform: rotate(2deg);
 }
 
@@ -150,7 +162,6 @@ main div:nth-of-type(6)  {
     justify-self: start;
     margin-top: -175px;
     transform: rotate(6deg);
-
 }
 
 main div:nth-of-type(7){
