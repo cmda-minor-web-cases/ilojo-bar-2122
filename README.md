@@ -12,8 +12,7 @@ Ilojo Bar of Casa do Fernandez was een beeldbepalend nationaal monument in Lagos
 
 
 ## Het probleem
---
-
+De Ilojo Bar is in 2016 gesloopt, terwijl dit niet legaal was. Hierdoor heeft Lagos een monumentaal pand minder. Het pand is nu misschien verloren gegaan, maar de verhalen die eromheen hangen niet. Aan ons de taak om deze verhalen op een digitale manier te vertellen.
 
 ## Debriefing
 --
@@ -23,15 +22,15 @@ Ontwerp en ontwikkel een interactief, virtueel monument voor Ilojo Bar.
 Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, waar velen alleen via hun mobiel het internet gebruiken, terwijl het ook voor desktop mooi is.
 
 
-### Gekozen user story
-
-**3 Ilojo Bar beleven**   
+## Gekozen user story
 Als inwoner van Lagos, Nigeriaan, lid van de diaspora of geïnteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
 
 
-### Oplossing
+## Oplossing
+--
 
-### Uitleg van de code
+## Uitleg van de code
+--
 
 ## Logs
 
