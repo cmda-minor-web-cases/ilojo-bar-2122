@@ -1,25 +1,25 @@
 @font-face {
   font-family: Helvetica-Bold;
-  src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff),
-    url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
+  font-display: swap;
+  src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
 }
 
 @font-face {
   font-family: Helvetica-Bold-Italic;
-  src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff),
-    url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
+  font-display: swap;
+  src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
 }
 
 @font-face {
   font-family: Helvetica-Regular;
-  src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff),
-    url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
+  font-display: swap;
+  src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
 }
 
 @font-face {
   font-family: Roxborough;
-  src: url(../public/fonts/RoxboroughCF-Light.woff),
-    url(../public/fonts/RoxboroughCF-Light.woff2);
+  font-display: swap;
+  src: url(../public/fonts/RoxboroughCF-Light.woff2);
 }
 
 * {
@@ -78,51 +78,100 @@ h4.inview {
 h1,
 h2 {
   font-size: clamp(1.65rem, 3vw, 6rem);
-  font-family: Helvetica-Bold-Italic;
+  font-family: Helvetica-Bold-Italic, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #333333;
 
   span {
-    font-family: Roxborough;
+    font-family: Roxborough, 'Times New Roman', Times, serif;
   }
 }
 
-.grain::before {
+.grain {
+  animation: animateGrain 8s steps(10) infinite;
   content: '';
+  background-image: url('../public/images/home/grain.webp');
+  height: 300%;
+  width: 300%;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.04;
-  z-index: 100;
-  pointer-events: none;
-  background-image: url('../public/images/home/grain.gif');
+  opacity: 0.075;
+  z-index: 999;
 }
 
-.grain::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 101;
-  mix-blend-mode: darken;
-  background-color: #2f2f2f;
-  opacity: 0.03;
+@keyframes animateGrain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%);
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+
+  50% {
+    transform: translate(-5%, -10%);
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%);
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%);
+  }
+  100% {
+    transform: translate(-15%, -20%);
+  }
 }
+
+// .grain::before {
+//   content: '';
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   opacity: 0.04;
+//   z-index: 100;
+//   pointer-events: none;
+//   background-image: url('../public/images/home/grain.gif');
+// }
+
+// .grain::after {
+//   content: '';
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 101;
+//   mix-blend-mode: darken;
+//   background-color: #2f2f2f;
+//   opacity: 0.03;
+// }
 
 h4 {
   font-size: clamp(1.2rem, 2vw, 4rem);
-  font-family: Helvetica-Bold;
+  font-family: Helvetica-Bold, Helvetica, sans-serif;
   color: #333333;
   margin: 0;
 }
 
 p {
   font-size: clamp(0.8rem, 1vw, 2rem);
-  font-family: Helvetica-Regular;
+  font-family: Helvetica-Regular, Helvetica, sans-serif;
   color: #333333;
 }
 
@@ -133,7 +182,7 @@ footer {
   width: 100%;
 }
 
-main article:not(article:nth-child(2), article:nth-child(5)) {
+main article:not(article:nth-child(2), article:nth-child(7)) {
   padding-top: 134px;
 }
 
