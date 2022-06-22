@@ -25,6 +25,9 @@ Mail: femke@fvz-journaliste.nl
 #### Achtergrondinformatie
 De bar is gemaakt door Afro-Brazilianen die terugkeerde van de slavernij. Deze personen kwamen goed geschoold terug, vaak ook in de achtergrond als timmerlui. Zo hebben ze het pand op kunnen bouwen in de Braziliaanse stijl. Het pand en de grond was eerst van een Spanjaard. Dit was de eerste eigenaar, deze Spanjaard (José Amoedo Fernandez) kwam uit Galicië wat in die tijd één van de armere delen was van Spanje. Later is het pand van familie naar familie gegaan en opgekocht door andere. Het pand werd als laatst gebruikt als woning en niet meer als restaurant of bar.
 
+#### Gebruikerscontext
+In Nigeria worden in de steden vrij moderne apparaten gebruikt. Denk aan Iphone modellen van drie jaar geleden. Buiten de stad gebruiken mensen wat ze kunnen krijgen. Dit zijn vaak 'afdankertjes' van de mensen in de stad. De internetverbinding is het grootste pijnpunt in Nigeria. Dit wil nog wel eens wegvallen en is erg traag. Desktops worden aanzienlijk minder gebruikt dan mobiele apparaten.
+
 #### Opdrachtomschrijving
 De opdracht is het maken van een digitaal monument van de Ilojo bar. Voornamelijk gericht op het vertellen van de geschiedenis van de bar.
 
@@ -60,13 +63,15 @@ Als inwoner van Lagos, Nigeriaan, lid van de Nigeriaanse diaspora of geïnteress
 
 
 ## Oplossing
+Om het huidige probleem op te lossen hebben wij gekozen om ieder verhaal een eigen karakter mee te geven. De rode draad van ons project is wel het journalistieke werk wat gedaan is door Femke van Zeijl. Doormiddel van een storytelling approach en een visuele aanpak brengen wij deze verhalen tot leven. Zo heeft de gebruiker het idee dat hij of zij daadwerkelijk in dat verhaal zit.
 
+Onze digitale oplossing: https://ilojo-bar.vercel.app/ (alleen op mobiel beschikbaar)
 
 ## Uitleg van de code
 --
 
 ## Volgende stappen
---
+-- (het hele verhaal op eigen pagina) (responsive) (3d model in de footer geanimeerd) 
 
 
 ## Logs
