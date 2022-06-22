@@ -80,9 +80,9 @@ main p:nth-of-type(2)  {
 
 main div:nth-of-type(6)  {
     order: 4;
-    width: 40%;
+    width: 41%;
     align-self:end;
-    justify-self: start ;
+    justify-self: start;
 }
 
 main p:nth-of-type(3)  {
