@@ -9,18 +9,50 @@ Ilojo Bar of Casa do Fernandez was een beeldbepalend nationaal monument in Lagos
   * [Gekozen user story](#gekozen-user-story)
   * [Oplossing](#oplossing)
   * [Uitleg van de code](#uitleg-van-de-code)
+  * [Volgende stappen](#volgende-stappen)
 
 
 ## Het probleem
 De Ilojo Bar is in 2016 gesloopt, terwijl dit niet legaal was. Hierdoor heeft Lagos een monumentaal pand minder. Het pand is nu misschien verloren gegaan, maar de verhalen die eromheen hangen niet. Aan ons de taak om deze verhalen op een digitale manier te vertellen.
 
 ## Debriefing
---
+
+#### Contactgegevens
+Femke van Zeijl is een journaliste die sinds 2012 haar werk doet vanuit Lagos Nigeria. Op dit moment is Femke bezig met een project over de Ilojo bar. Hier heeft ze ook een scriptie over geschreven voor haar master African Studies. Samen met het bedrijf Legacy (Zij zetten zich in om de erfgoed en geschiedenis van Nigeria te behouden en promoten) zet ze haar onderzoek door na de tragische vernieling van de bar in 2016.
+
+Mail: femke@fvz-journaliste.nl
+
+#### Achtergrondinformatie
+De bar is gemaakt door Afro-Brazilianen die terugkeerde van de slavernij. Deze personen kwamen goed geschoold terug, vaak ook in de achtergrond als timmerlui. Zo hebben ze het pand op kunnen bouwen in de Braziliaanse stijl. Het pand en de grond was eerst van een Spanjaard. Dit was de eerste eigenaar, deze Spanjaard (José Amoedo Fernandez) kwam uit Galicië wat in die tijd één van de armere delen was van Spanje. Later is het pand van familie naar familie gegaan en opgekocht door andere. Het pand werd als laatst gebruikt als woning en niet meer als restaurant of bar.
+
+#### Opdrachtomschrijving
+De opdracht is het maken van een digitaal monument van de Ilojo bar. Voornamelijk gericht op het vertellen van de geschiedenis van de bar.
+
+#### Aanleiding
+De Ilojo bar is in 2016 gesloopt, onterecht. Het was een monumentaal pand. Dus nu moet het herbouwd worden.
+
+#### Doelstelling
+Laten zien wat je nog kan doen met erfgoed dat er niet meer is.
+
+#### Oplevering
+Iedereen maakt zijn eigen project en zal dit opleveren.
+
+#### Randvoorwaarden
+-	Voor mobiel moet het goed werken
+-	Verhalen vertellen
+-	Verhalen insturen en modereren
+
+#### Gebruikers van het eindresultaat
+1.	Mensen die in Lagos wonen.
+2.	Nigerianen, ook voor Nigerianen in andere landen.
+3.	Wereldburgers
+
+#### Relatie met andere projecten
+Legacy waar Femke nu mee samenwerkt heeft al eerdere projecten gedaan met betrekking tot het behouden van cultureel erfgoed in Nigeria.
 
 ## Design challenge
 Ontwerp en ontwikkel een interactief, virtueel monument voor Ilojo Bar.
 Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, waar velen alleen via hun mobiel het internet gebruiken, terwijl het ook voor desktop mooi is.
-
 
 ## Gekozen user story
 ### Verhalen over Ilojo Bar lezen, luisteren en bekijken
@@ -28,10 +60,14 @@ Als inwoner van Lagos, Nigeriaan, lid van de Nigeriaanse diaspora of geïnteress
 
 
 ## Oplossing
---
+
 
 ## Uitleg van de code
 --
+
+## Volgende stappen
+--
+
 
 ## Logs
 
