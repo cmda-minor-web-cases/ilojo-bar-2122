@@ -23,7 +23,8 @@ Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, w
 
 
 ## Gekozen user story
-Als inwoner van Lagos, Nigeriaan, lid van de diaspora of geïnteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
+### Verhalen over Ilojo Bar lezen, luisteren en bekijken
+Als inwoner van Lagos, Nigeriaan, lid van de Nigeriaanse diaspora of geïnteresseerde wereldburger, wil ik online verhalen over Ilojo Bar kunnen lezen, luisteren en zien, zodat ik meer te weten kan komen over de betekenis van het gebouw voor de miljoenenstad Lagos en van de kosmopolitsche geschiedenis ervan, die van Spanje tot Brazilië tot Nigeria leidt.
 
 
 ## Oplossing
