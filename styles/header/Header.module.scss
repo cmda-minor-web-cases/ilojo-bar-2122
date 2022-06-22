@@ -27,10 +27,12 @@
     margin: auto 10%;
     animation: blur 2.5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
   }
   .image {
     animation: inView 2s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
     &:nth-child(1) {
       position: absolute;
       z-index: 2;

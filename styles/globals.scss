@@ -1,25 +1,25 @@
 @font-face {
   font-family: Helvetica-Bold;
-  src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff),
-    url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
+  src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Helvetica-Bold-Italic;
-  src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff),
-    url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
+  src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Helvetica-Regular;
-  src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff),
-    url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
+  src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Roxborough;
-  src: url(../public/fonts/RoxboroughCF-Light.woff),
-    url(../public/fonts/RoxboroughCF-Light.woff2);
+  src: url(../public/fonts/RoxboroughCF-Light.woff2);
+  font-display: swap;
 }
 
 * {
@@ -41,11 +41,13 @@ a {
 .article-img.inview {
   animation: inView 3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
 }
 h2.inview,
 h4.inview {
   animation: blur;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
 }
 
 h2.inview {
@@ -78,12 +80,12 @@ h4.inview {
 h1,
 h2 {
   font-size: clamp(1.65rem, 3vw, 6rem);
-  font-family: Helvetica-Bold-Italic;
+  font-family: Helvetica-Bold-Italic, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #333333;
 
   span {
-    font-family: Roxborough;
+    font-family: Roxborough, 'Times New Roman', Times, serif;
   }
 }
 
@@ -115,16 +117,15 @@ h2 {
 
 h4 {
   font-size: clamp(1.2rem, 2vw, 4rem);
-  font-family: Helvetica-Bold;
+  font-family: Helvetica-Bold, Helvetica, sans-serif;
   color: #333333;
   margin: 0;
 }
 
 p {
   font-size: clamp(0.8rem, 1vw, 2rem);
-  font-family: Helvetica-Regular;
+  font-family: Helvetica-Regular, Helvetica, sans-serif;
   font-size: 1em;
-  line-height: 1.6em;
   color: #333333;
 }
 
@@ -135,7 +136,7 @@ footer {
   width: 100%;
 }
 
-main article:not(article:nth-child(2), article:nth-child(5)) {
+main article:not(article:nth-child(2), article:nth-child(7)) {
   padding-top: 134px;
 }
 

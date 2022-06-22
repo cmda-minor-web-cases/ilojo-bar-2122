@@ -16,13 +16,10 @@
       }
       p:first-of-type {
         order: 4;
-        margin-bottom: 100%;
+        margin-bottom: 5%;
       }
       div:nth-of-type(1) {
         order: 5;
-        position: absolute;
-        top: 38%;
-        left: 0;
         width: clamp(250px, 42.5%, 400px);
         transform: rotate(4deg);
       }
@@ -34,7 +31,7 @@
       }
       p:last-of-type {
         order: 7;
-        margin-bottom: 100%;
+        margin-bottom: 10%;
       }
       div:nth-of-type(3) {
         order: 8;
@@ -45,11 +42,8 @@
       }
       div:nth-of-type(4) {
         order: 9;
-        position: absolute;
         width: clamp(200px, 37.5%, 350px);
-        bottom: 7%;
-        right: 0%;
-        transform: rotate(-12deg);
+        transform: rotate(-12deg) translateX(75%);
       }
     }
   }
