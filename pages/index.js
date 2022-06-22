@@ -15,9 +15,9 @@ export default function Home({ stories }) {
         <Header />
         <Main />
         <Footer />
-        <Script strategy='lazyOnload' async src='/js/generateHeading.js' />
-        <Script strategy='lazyOnload' async src='/js/ScrollJacking.js' />
-        <Script strategy='lazyOnload' async src='/js/InView.js' />
+        <Script strategy='lazyOnload' src='/js/generateHeading.js' />
+        <Script strategy='lazyOnload' src='/js/ScrollJacking.js' />
+        <Script strategy='lazyOnload' src='/js/InView.js' />
       </div>
     </Context.Provider>
   );
