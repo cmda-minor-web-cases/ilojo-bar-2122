@@ -43,23 +43,22 @@
       }
       p:first-of-type {
         order: 4;
-        margin-bottom: 70%;
+        // margin-bottom: 70%;
       }
       div:nth-of-type(2) {
-        order: 5;
+        order: 6;
         position: absolute;
-        top: 46%;
+        top: 49%;
         left: 0%;
         transform: rotate(-6deg);
         width: clamp(225px, 40%, 375px);
       }
       div:last-of-type {
-        order: 6;
-        position: absolute;
+        order: 5;
+        bottom: 300px;
         width: clamp(200px, 35%, 350px);
-        top: 48%;
-        right: 0;
-        transform: rotate(6deg);
+        transform: rotate(6deg) translate(75%, -7%);
+        margin: 5% 0;
       }
       p:last-of-type {
         order: 7;

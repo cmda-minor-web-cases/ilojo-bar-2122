@@ -12,13 +12,12 @@ export default function Home({ stories }) {
   return (
     <Context.Provider value={[context, setContext]}>
       <div>
-        <div className='grain'></div>
         <Header />
         <Main />
         <Footer />
-        <Script src='/js/generateHeading.js' strategy='lazyOnload' />
-        <Script src='/js/ScrollJacking.js' strategy='lazyOnload' />
-        <Script src='/js/InView.js' strategy='lazyOnload' />
+        <Script strategy='lazyOnload' async src='/js/generateHeading.js' />
+        <Script strategy='lazyOnload' async src='/js/ScrollJacking.js' />
+        <Script strategy='lazyOnload' async src='/js/InView.js' />
       </div>
     </Context.Provider>
   );

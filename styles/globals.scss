@@ -1,25 +1,25 @@
 @font-face {
   font-family: Helvetica-Bold;
-  font-display: swap;
   src: url(../public/fonts/HelveticaNeueLTCom-Bd.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Helvetica-Bold-Italic;
-  font-display: swap;
   src: url(../public/fonts/HelveticaNeueLTCom-BdIt.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Helvetica-Regular;
-  font-display: swap;
   src: url(../public/fonts/HelveticaNeueLTCom-Roman.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Roxborough;
-  font-display: swap;
   src: url(../public/fonts/RoxboroughCF-Light.woff2);
+  font-display: swap;
 }
 
 * {
@@ -41,11 +41,13 @@ a {
 .article-img.inview {
   animation: inView 3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
 }
 h2.inview,
 h4.inview {
   animation: blur;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
 }
 
 h2.inview {
@@ -172,6 +174,7 @@ h4 {
 p {
   font-size: clamp(0.8rem, 1vw, 2rem);
   font-family: Helvetica-Regular, Helvetica, sans-serif;
+  font-size: 1em;
   color: #333333;
 }
 
