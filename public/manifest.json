@@ -1,0 +1,17 @@
+{
+    "name": "Ilojo bar",
+    "short_name": "Ilojo bar",
+    "start_url": "/",
+    "theme_color": "#EFE8E0",
+    "icons" : [
+        {
+            "src": "/images/front.png",
+            "type": "image/png",
+            "sizes": "1890x1890"
+          }
+    ],
+   
+    "display": "standalone",
+    "scope": "/",
+    "description": "This is a virtual monument for the Ilojo bar"
+  }
