@@ -3,12 +3,17 @@
 Ilojo Bar of Casa do Fernandez was een beeldbepalend nationaal monument in Lagos, Nigeria, dat in 2016 illegaal werd gesloopt. Ilojo Bar werd ontworpen en gebouwd door Afrikanen die in de negentiende eeuw terugkeerden uit slavernij in Brazilië. Legacy wil graag een Engelstalige website die een soort virtueel monument wordt van dit bijzondere gebouw en de vele verhalen er omheen.
 
 ## Inhoudsopgave
-  * [Het Probleem](#het-probleem)
+  * [Het probleem](#het-probleem)
   * [Debriefing](#debriefing)
   * [Design challenge](#design-challenge)
-  * [Gekozen User Story](#gekozen-user-story)
+  * [Gekozen user story](#gekozen-user-story)
   * [Oplossing](#oplossing)
   * [Uitleg van de code](#uitleg-van-de-code)
+
+
+## Het probleem
+--
+
 
 ## Debriefing
 --
@@ -18,11 +23,15 @@ Ontwerp en ontwikkel een interactief, virtueel monument voor Ilojo Bar.
 Aantrekkelijk én functioneel voor inwoners van een land met lage bandbreedte, waar velen alleen via hun mobiel het internet gebruiken, terwijl het ook voor desktop mooi is.
 
 
-### Gekozen User Story
+### Gekozen user story
 
 **3 Ilojo Bar beleven**   
 Als inwoner van Lagos, Nigeriaan, lid van de diaspora of geïnteresseerde wereldburger wil ik een virtuele indruk van het gebouw kunnen krijgen, zodat ik kan zien hoe het ooit was. Zo wordt het een virtueel monument voor een verdwenen stuk Nigeriaans erfgoed.
 
+
+### Oplossing
+
+### Uitleg van de code
 
 ## Logs
 
