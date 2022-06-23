@@ -3,37 +3,45 @@
 <body class="bar-page">
   <header>
     <a href="/" class="back">
-      <img src="img/back-button.svg" alt="back arrow" />
+      <img src="img/back-button.png" srcset="img/back-button.webp" alt="back arrow" />
     </a>
     <h1>ILOJO BAR</h1>
   </header>
   <main>
     <ul class="bar-area">
       <li>
-        <img src="img/lamps.svg" alt="Lamps on top of the bar" class="lamps" />
+        <img src="img/lamps.png" srcset="img/lamps.webp" alt="Lamps on top of the bar" class="lamps" />
       </li>
       <li>
-        <img src="img/Union.svg" alt="text bubble" class="bubble" />
+        <p>Want to hear a story? Choose a story on the menu!</p>
       </li>
       <li>
-        <img src="img/barman.svg" alt="Barman" class="man" />
+        <img src="img/barman.png" srcset="img/barman.webp" alt="Barman" class="man" />
       </li>
       <li>
-        <img src="img/bar.png" alt="Bar with drinks" class="bar" />
+        <img src="img/bar.png" srcset="img/bar.webp" alt="Bar with drinks" class="bar" />
       </li>
       <li>
-        <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
+        <img src="img/stools.png" srcset="img/stools.png" alt="Stools to sit on" class="stools" />
       </li>
     </ul>
   </main>
   <footer>
     <ol class="menu">
+      <li>
+        <legend>Swipe to discover!</legend>
+        <img src="img/swipe.png" srcset="img/swipe.webp" alt="swipe icon">
+      </li>
       <% stories.forEach(story => { %>
       <% let storyTitle = story.title.split(' ').join('_').toLowerCase() %>
-      <li><a href="/<%= storyTitle %>"><h2><%- story.title %></h2></a></li>
+      <li>
+        <img src="<%= story.img %>" alt="<%= storyTitle %>">
+        <a href="/<%= storyTitle %>"><h2><%- story.title %></h2></a>
+        <a href="/<%= storyTitle %>">Discover</a>
+      </li>
       <% }) %>
     </ol>
-    <img src="img/hands.svg" alt="hands that hold the menu" />
+    <img src="img/hands.png" srcset="img/hands.webp" alt="hands that hold the menu" />
   </footer>
 
   <%- include('./partials/foot') %>

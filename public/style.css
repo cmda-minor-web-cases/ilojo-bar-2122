@@ -132,7 +132,7 @@ body {
 }
 
 main section:nth-child(2) {
-  background-image: url(img/street-background.png);
+  background-image: url(img/street-background.webp);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -180,12 +180,13 @@ main section:nth-child(2) {
 
 
 .bar-page {
-  background: url(img/bar-background.png);
+  background: url(img/bar-background.webp);
   background-size: cover;
+  overflow: hidden;
 }
 
 .bar-page header {
-  background-image: url(img/wood-sign.svg);
+  background-image: url(img/wood-sign.webp);
   background-size: 85vw;
   background-position: 50% 10%;
   background-repeat: no-repeat;
@@ -234,9 +235,32 @@ main section:nth-child(2) {
 
 .bar-area li:nth-child(2) {
   position: absolute;
-  top: 2rem;
-  left: 25%;
-  width: 20vw;
+  top: 1rem;
+  left: 12%;
+  line-height: 1;
+  font-size: 14px;
+  width: 130px;
+  padding: 1.5em 1em 1em 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.bar-area li:nth-child(2)::after {
+  display: block;
+  content: "";
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5rem;
+  right: -.5rem;
+  clip-path: polygon(41% 0, 0 0, 48% 45%);
+  z-index: -1;
 }
 
 .bar-area li:nth-child(3) {
@@ -260,43 +284,86 @@ main section:nth-child(2) {
 
 /* Stories menu */
 
-footer {
+.bar-page footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
 
-.menu {
+.bar-page .menu {
   width: 50vw;
   height: 250px;
   background-color: #EBE2C2;
   border-radius: 21px;
-  padding: 1em;
+  padding: .5em;
   z-index: 3;
   overflow-x: scroll;
   list-style: none;
   display: flex;
 }
 
-.menu li {
+.bar-page .menu li {
   min-width: 100%;
   height: 100%;
   background-color: #FFFCDE;
   border-radius: 10px;
   margin-right: 1rem;
-  line-height: initial;
+  line-height: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.menu li:last-child {
+.bar-page .menu li:last-child {
   margin: 0;
 }
 
-.menu a {
+.bar-page .menu li img:not(.bar-page .menu li:first-child img) {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.bar-page .menu li:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-page .menu li:first-child legend {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.bar-page .menu h2 {
+  font-size: 18px;
+  margin: .5em 1em 2em 1em;
+}
+
+.bar-page .menu a:first-of-type {
   color: #2d2209;
   text-decoration: none;
 }
 
-footer img {
-  display: none;
+.bar-page .menu a:last-of-type {
+  color: white;
+  background-color: #2d2209;
+  text-decoration: none;
+  padding: .25rem 1.5rem;
+}
+
+footer > img {
+  width: 97vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  pointer-events: none;
 }
 
 
@@ -322,10 +389,6 @@ footer img {
   margin: 0 auto;
 }
 
-.story-page main {
-  padding: 1rem;
-}
-
 .story-page h1 {
   font-size: 6vmin;
   color: #f2f0bd;
@@ -336,6 +399,100 @@ footer img {
   line-height: 1.2rem;
 }
 
-.story-page p {
+.story-page main {
+  padding: 1rem;
+}
+
+.story-page main p {
   margin-bottom: 1rem;
+}
+
+/* Story images */
+
+.story-page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-page main img {
+  width: 70vw;
+  margin: 1rem;
+  border: 10px ridge #5c4e49;
+}
+
+.story-page main p:first-of-type {
+  order: 1;
+}
+
+.story-page main p:nth-of-type(2) {
+  order: 3;
+}
+
+.story-page main p:nth-of-type(3) {
+  order: 5;
+}
+
+.story-page main p:nth-of-type(4) {
+  order: 7;
+}
+
+.story-page main p:nth-of-type(5) {
+  order: 9;
+}
+
+.story-page main p:nth-of-type(6) {
+  order: 11;
+}
+
+.story-page main p:nth-of-type(7) {
+  order: 13;
+}
+
+.story-page main p:nth-of-type(8) {
+  order: 15;
+}
+
+.story-page main p:nth-of-type(9) {
+  order: 17;
+}
+
+.story-page main p:nth-of-type(10) {
+  order: 19;
+}
+
+.story-page main img:first-of-type {
+  align-self: end;
+  margin-right: -10%;
+  transform: rotate(5deg);
+  order: 2;
+}
+
+.story-page main img:nth-of-type(2) {
+  margin-left: -10%;
+  transform: rotate(-5deg);
+  order: 4;
+}
+
+.story-page main img:nth-of-type(3) {
+  order: 6;
+}
+
+.story-page main img:nth-of-type(4) {
+  order: 8;
+  align-self: end;
+  transform: rotate(2deg);
+}
+
+.story-page main img:nth-of-type(5) {
+  order: 10;
+  transform: rotate(-8deg);
+}
+
+.story-page main img:nth-of-type(6) {
+  order: 12;
+}
+
+.story-page main img:nth-of-type(7) {
+  order: 14;
 }
