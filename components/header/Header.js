@@ -3,12 +3,6 @@ import Image from 'next/image';
 // Styles
 import styles from '../../styles/header/Header.module.scss';
 
-// Images
-import architectTop from '../../public/images/home/home-photo-01.png';
-import architectSide from '../../public/images/home/home-photo-02.png';
-import oldBuilding from '../../public/images/home/home-photo-03.png';
-import newBuilding from '../../public/images/home/home-photo-04.png';
-
 // Context
 import React, { useContext } from 'react';
 import { Context } from '../../context/state';
