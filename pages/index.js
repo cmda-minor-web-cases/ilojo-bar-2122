@@ -15,6 +15,7 @@ export default function Home({ stories }) {
       <Head>
         <title>The stories of Ilojo bar.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/images/home/favicon.svg" type="image/svg+xml"></link>
       </Head> 
       <div>
         <div className='grain'></div>
