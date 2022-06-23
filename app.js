@@ -5,7 +5,7 @@ import * as prismicH from "@prismicio/helpers";
 import ejs from "ejs";
 import path from "path";
 import { router } from './router/router.js';
-const port = 1855;
+const port = process.env.PORT || 1855;
 
 app.set('view engine', 'ejs');
 app.engine('ejs', ejs.__express);
