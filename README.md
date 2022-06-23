@@ -37,7 +37,6 @@ Attractive and functional for residents of a country with low bandwidth, where m
 
 ### Must have
 
-* 3d Model ✅
 * Bar man that tells you the stories ✅
 * Api for the Ilojo Bar ✅
 * The stories visually designed ✅
@@ -52,6 +51,7 @@ Attractive and functional for residents of a country with low bandwidth, where m
 * Adding your own stories of the ilojo bar
 * Zoom in animation transition to the next page
 * More responsiveness and Desktop version
+* 3d Model ✅
 
 ### Want to have
 
