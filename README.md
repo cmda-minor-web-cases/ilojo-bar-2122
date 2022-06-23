@@ -7,6 +7,7 @@
   * [The Client](#the-client-🤝🏻)
   * [How does it work](#how-does-it-work-❔)
   * [Design challenge](#design-challenge-🖌)
+  * [Moscow](#moscow)
   * [Licence](#licence-⚠)
 
 ## Description 👩🏻‍💻
@@ -29,6 +30,31 @@ Once you have opened the website, you are shown the beautiful Ilojo Building tog
 ## Design challenge 🖌
 Design and develop an interactive virtual monument for Ilojo Bar.
 Attractive and functional for residents of a country with low bandwidth, where many only use the internet via their mobile phone, while it is also beautiful for desktop.
+
+## Moscow 🧔🏻
+
+### Must have
+
+* 3d Model ✅
+* Bar man that tells you the stories ✅
+* Api for the Ilojo Bar ✅
+* The stories visually designed ✅
+
+### Should Have
+
+* Fallback versions of the website ✅
+* Scaled down images so the website is faster ✅
+
+### Could Have
+
+* Adding your own stories of the ilojo bar
+* Zoom in animation transition to the next page
+* More responsiveness and Desktop version
+
+### Want to have
+
+* AR function to see the building in RealLife scale
+* More functionalities and nice extras
 
 ## Licence ⚠
 
