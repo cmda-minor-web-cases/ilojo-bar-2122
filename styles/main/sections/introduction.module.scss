@@ -1,0 +1,12 @@
+.main {
+  article {
+    &:nth-of-type(1) {
+      background-color: #fffdfa;
+      h4 {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
