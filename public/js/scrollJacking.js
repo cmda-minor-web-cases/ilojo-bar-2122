@@ -71,4 +71,3 @@ function SmoothScroll(target, speed, smooth) {
 }
 
 init();
-console.log('het werkt');
