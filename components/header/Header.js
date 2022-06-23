@@ -10,7 +10,6 @@ import { Context } from '../../context/state';
 export default function Header() {
   const [context] = useContext(Context);
   const headerContent = context.header;
-  console.log(headerContent.image[0].url);
   return (
     <header className={styles.header}>
       {/*Top images*/}
