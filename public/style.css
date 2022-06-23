@@ -259,8 +259,8 @@ main section:nth-child(2) {
   position: absolute;
   top: 3.5rem;
   right: -.5rem;
-  clip-path: polygon(41% 0, 0 0, 48% 45%);
   z-index: -1;
+  clip-path: polygon(41% 0, 0 0, 48% 45%);
 }
 
 .bar-area li:nth-child(3) {
@@ -321,11 +321,16 @@ main section:nth-child(2) {
   margin: 0;
 }
 
-.bar-page .menu li img:not(.bar-page .menu li:first-child img) {
+.bar-page .menu li img {
   width: 100%;
   height: 40%;
   object-fit: cover;
   object-position: top;
+}
+
+.bar-page .menu li:first-child img {
+  width: 50%;
+  object-fit: normal;
 }
 
 .bar-page .menu li:first-child {
