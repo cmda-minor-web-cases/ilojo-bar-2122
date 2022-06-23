@@ -33,6 +33,8 @@ Attractive and functional for residents of a country with low bandwidth, where m
 
 ## Moscow 🧔🏻
 
+[link to our Project Board](https://github.com/users/ppijn/projects/1/views/1)
+
 ### Must have
 
 * 3d Model ✅
